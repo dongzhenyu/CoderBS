@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  budejie
+//  baisibudeijie
 //
 //  Created by dzy on 15/12/31.
 //  Copyright © 2015年 董震宇. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "DZYTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,19 @@
 @implementation AppDelegate
 
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    DZYTabBarViewController *tabBarVc = [[DZYTabBarViewController alloc] init];
+    
+    self.window.rootViewController = tabBarVc;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
