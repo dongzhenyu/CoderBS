@@ -13,6 +13,13 @@
 		403494BF1C35851500C35E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494B31C35851500C35E15 /* main.m */; };
 		403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494C21C358C5100C35E15 /* UIColor+Hex.m */; };
 		403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494C51C358C5C00C35E15 /* UIImage+Image.m */; };
+		403494C91C358F3700C35E15 /* DZYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494C81C358F3700C35E15 /* DZYEssenceViewController.m */; };
+		403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494CB1C358F4B00C35E15 /* DZYFriendTrendsViewController.m */; };
+		403494CF1C358F5B00C35E15 /* DZYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494CE1C358F5B00C35E15 /* DZYMeViewController.m */; };
+		403494D21C358F6B00C35E15 /* DZYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494D11C358F6B00C35E15 /* DZYNewViewController.m */; };
+		403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494D41C358F7800C35E15 /* DZYPublishViewController.m */; };
+		403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494D71C35964F00C35E15 /* DZYTabBar.m */; };
+		403494DB1C359A2C00C35E15 /* UIView+DZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */; };
 		5CFD2110D88FC8A09F95E3DF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFD1D51BABE6FD16007577A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +37,20 @@
 		403494C21C358C5100C35E15 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		403494C41C358C5C00C35E15 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		403494C51C358C5C00C35E15 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		403494C71C358F3700C35E15 /* DZYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYEssenceViewController.h; sourceTree = "<group>"; };
+		403494C81C358F3700C35E15 /* DZYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYEssenceViewController.m; sourceTree = "<group>"; };
+		403494CA1C358F4B00C35E15 /* DZYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZYFriendTrendsViewController.h; path = ../DZYFriendTrendsViewController.h; sourceTree = "<group>"; };
+		403494CB1C358F4B00C35E15 /* DZYFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZYFriendTrendsViewController.m; path = ../DZYFriendTrendsViewController.m; sourceTree = "<group>"; };
+		403494CD1C358F5B00C35E15 /* DZYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYMeViewController.h; sourceTree = "<group>"; };
+		403494CE1C358F5B00C35E15 /* DZYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYMeViewController.m; sourceTree = "<group>"; };
+		403494D01C358F6B00C35E15 /* DZYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYNewViewController.h; sourceTree = "<group>"; };
+		403494D11C358F6B00C35E15 /* DZYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYNewViewController.m; sourceTree = "<group>"; };
+		403494D31C358F7800C35E15 /* DZYPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPublishViewController.h; sourceTree = "<group>"; };
+		403494D41C358F7800C35E15 /* DZYPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPublishViewController.m; sourceTree = "<group>"; };
+		403494D61C35964F00C35E15 /* DZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTabBar.h; sourceTree = "<group>"; };
+		403494D71C35964F00C35E15 /* DZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTabBar.m; sourceTree = "<group>"; };
+		403494D91C359A2C00C35E15 /* UIView+DZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DZYExtension.h"; sourceTree = "<group>"; };
+		403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DZYExtension.m"; sourceTree = "<group>"; };
 		868E32A6A843F6968728DDC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C29A3CA166483454F8CD7AFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFD1D51BABE6FD16007577A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +131,8 @@
 		4034949E1C35851500C35E15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				403494C71C358F3700C35E15 /* DZYEssenceViewController.h */,
+				403494C81C358F3700C35E15 /* DZYEssenceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +164,8 @@
 		403494A21C35851500C35E15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				403494CA1C358F4B00C35E15 /* DZYFriendTrendsViewController.h */,
+				403494CB1C358F4B00C35E15 /* DZYFriendTrendsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +197,8 @@
 		403494A61C35851500C35E15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				403494CD1C358F5B00C35E15 /* DZYMeViewController.h */,
+				403494CE1C358F5B00C35E15 /* DZYMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +230,8 @@
 		403494AA1C35851500C35E15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				403494D01C358F6B00C35E15 /* DZYNewViewController.h */,
+				403494D11C358F6B00C35E15 /* DZYNewViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +283,8 @@
 		403494B51C35851500C35E15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				403494D61C35964F00C35E15 /* DZYTabBar.h */,
+				403494D71C35964F00C35E15 /* DZYTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +305,8 @@
 				403494C21C358C5100C35E15 /* UIColor+Hex.m */,
 				403494C41C358C5C00C35E15 /* UIImage+Image.h */,
 				403494C51C358C5C00C35E15 /* UIImage+Image.m */,
+				403494D91C359A2C00C35E15 /* UIView+DZYExtension.h */,
+				403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -298,6 +331,8 @@
 		403494BA1C35851500C35E15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				403494D31C358F7800C35E15 /* DZYPublishViewController.h */,
+				403494D41C358F7800C35E15 /* DZYPublishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +397,7 @@
 		4034947A1C35846700C35E15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DZY;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "董震宇";
 				TargetAttributes = {
@@ -453,11 +489,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403494DB1C359A2C00C35E15 /* UIView+DZYExtension.m in Sources */,
+				403494CF1C358F5B00C35E15 /* DZYMeViewController.m in Sources */,
+				403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */,
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
+				403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */,
 				403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */,
 				403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */,
+				403494D21C358F6B00C35E15 /* DZYNewViewController.m in Sources */,
+				403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */,
 				403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */,
 				403494BF1C35851500C35E15 /* main.m in Sources */,
+				403494C91C358F3700C35E15 /* DZYEssenceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
