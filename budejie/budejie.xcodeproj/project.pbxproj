@@ -11,6 +11,9 @@
 		403494BD1C35851500C35E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494AF1C35851500C35E15 /* AppDelegate.m */; };
 		403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494B21C35851500C35E15 /* DZYTabBarViewController.m */; };
 		403494BF1C35851500C35E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494B31C35851500C35E15 /* main.m */; };
+		403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494C21C358C5100C35E15 /* UIColor+Hex.m */; };
+		403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494C51C358C5C00C35E15 /* UIImage+Image.m */; };
+		5CFD2110D88FC8A09F95E3DF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFD1D51BABE6FD16007577A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,14 @@
 		403494B11C35851500C35E15 /* DZYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTabBarViewController.h; sourceTree = "<group>"; };
 		403494B21C35851500C35E15 /* DZYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTabBarViewController.m; sourceTree = "<group>"; };
 		403494B31C35851500C35E15 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		403494C01C358A5500C35E15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		403494C11C358C5100C35E15 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		403494C21C358C5100C35E15 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		403494C41C358C5C00C35E15 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		403494C51C358C5C00C35E15 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		868E32A6A843F6968728DDC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C29A3CA166483454F8CD7AFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DDFD1D51BABE6FD16007577A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFD2110D88FC8A09F95E3DF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,8 @@
 			children = (
 				403494841C35846700C35E15 /* budejie */,
 				403494831C35846700C35E15 /* Products */,
+				48CA1EEB20459D4973423A4F /* Pods */,
+				84B9099682D52D40F7531CB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				4034949C1C35851500C35E15 /* Classes */,
-				403494911C35846700C35E15 /* Assets.xcassets */,
-				403494961C35846700C35E15 /* Info.plist */,
 				403494851C35846700C35E15 /* Supporting Files */,
 			);
 			path = budejie;
@@ -65,6 +77,8 @@
 		403494851C35846700C35E15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				403494911C35846700C35E15 /* Assets.xcassets */,
+				403494961C35846700C35E15 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -76,9 +90,9 @@
 				403494A11C35851500C35E15 /* FriendTrends(关注) */,
 				403494A51C35851500C35E15 /* Me(我) */,
 				403494A91C35851500C35E15 /* New(新帖) */,
+				403494B91C35851500C35E15 /* Publish(发布) */,
 				403494AD1C35851500C35E15 /* Other(其它) */,
 				403494B61C35851500C35E15 /* Public(公共库) */,
-				403494B91C35851500C35E15 /* Publish(发布) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -210,12 +224,13 @@
 		403494AD1C35851500C35E15 /* Other(其它) */ = {
 			isa = PBXGroup;
 			children = (
-				403494AE1C35851500C35E15 /* AppDelegate.h */,
-				403494AF1C35851500C35E15 /* AppDelegate.m */,
 				403494B01C35851500C35E15 /* Controller */,
-				403494B31C35851500C35E15 /* main.m */,
 				403494B41C35851500C35E15 /* Model */,
 				403494B51C35851500C35E15 /* View */,
+				403494AE1C35851500C35E15 /* AppDelegate.h */,
+				403494AF1C35851500C35E15 /* AppDelegate.m */,
+				403494B31C35851500C35E15 /* main.m */,
+				403494C01C358A5500C35E15 /* PrefixHeader.pch */,
 			);
 			path = "Other(其它)";
 			sourceTree = "<group>";
@@ -255,6 +270,10 @@
 		403494B71C35851500C35E15 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				403494C11C358C5100C35E15 /* UIColor+Hex.h */,
+				403494C21C358C5100C35E15 /* UIColor+Hex.m */,
+				403494C41C358C5C00C35E15 /* UIImage+Image.h */,
+				403494C51C358C5C00C35E15 /* UIImage+Image.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -297,6 +316,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		48CA1EEB20459D4973423A4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C29A3CA166483454F8CD7AFB /* Pods.debug.xcconfig */,
+				868E32A6A843F6968728DDC1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84B9099682D52D40F7531CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD1D51BABE6FD16007577A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,9 +340,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 403494991C35846700C35E15 /* Build configuration list for PBXNativeTarget "budejie" */;
 			buildPhases = (
+				271851F79FFE05BAE3D0B842 /* Check Pods Manifest.lock */,
 				4034947E1C35846700C35E15 /* Sources */,
 				4034947F1C35846700C35E15 /* Frameworks */,
 				403494801C35846700C35E15 /* Resources */,
+				8576F05AA79765B212CC7C22 /* Embed Pods Frameworks */,
+				B30D1B57F25AD180DFB0632F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,12 +400,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		271851F79FFE05BAE3D0B842 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8576F05AA79765B212CC7C22 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B30D1B57F25AD180DFB0632F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4034947E1C35846700C35E15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
+				403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */,
+				403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */,
 				403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */,
 				403494BF1C35851500C35E15 /* main.m in Sources */,
 			);
@@ -401,6 +490,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "budejie/Classes/Other(其它)/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -442,6 +532,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "budejie/Classes/Other(其它)/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -457,8 +548,11 @@
 		};
 		4034949A1C35846700C35E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29A3CA166483454F8CD7AFB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = budejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hehemian.budejie;
@@ -468,8 +562,11 @@
 		};
 		4034949B1C35846700C35E15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 868E32A6A843F6968728DDC1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = budejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hehemian.budejie;
@@ -496,6 +593,7 @@
 				4034949B1C35846700C35E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
