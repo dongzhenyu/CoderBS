@@ -7,6 +7,7 @@
 //
 
 #import "DZYMeViewController.h"
+#import "DZYSettingViewController.h"
 
 @interface DZYMeViewController ()
 
@@ -18,21 +19,42 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = DZYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
+    
+    [self setupNavBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 设置导航条
+- (void)setupNavBar
+{
+    // UINavigationItem:决定导航条内容
+    // UIBarButtonItem:决定导航条上按钮的内容
+    
+    // 设置
+    UIBarButtonItem *settintItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(clickSetting)];
+    
+    UIBarButtonItem *nightItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(clickNight:)];
+    
+    // right
+    self.navigationItem.rightBarButtonItems = @[settintItem,nightItem];
+ 
+    // title
+    self.navigationItem.title = @"我的";
+    
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 点击设置就会调用
+- (void)clickSetting
+{
+    DZYSettingViewController *settingVc = [[DZYSettingViewController alloc] init];
+    // 一定要在显示之前设置 隐藏底部条
+    settingVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:settingVc animated:YES];
 }
-*/
 
+// 进入夜间模式
+- (void)clickNight:(UIButton *)btn
+{
+    btn.selected = !btn.selected;
+}
 @end

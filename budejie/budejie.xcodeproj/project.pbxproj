@@ -20,6 +20,23 @@
 		403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494D41C358F7800C35E15 /* DZYPublishViewController.m */; };
 		403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494D71C35964F00C35E15 /* DZYTabBar.m */; };
 		403494DB1C359A2C00C35E15 /* UIView+DZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */; };
+		40810CA71C3AD0A00080A9FA /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */; };
+		40810CAA1C3AD0EE0080A9FA /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */; };
+		408A87A51C394516006D0908 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 408A87A41C394516006D0908 /* HttpRequest.m */; };
+		40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EC1C3A861800D129ED /* DZYConst.m */; };
+		40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EF1C3A8C6800D129ED /* DZYAdModal.m */; };
+		40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F21C3A959900D129ED /* LaunchImage-568h@2x.png */; };
+		40CB03FA1C3A959900D129ED /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F31C3A959900D129ED /* LaunchImage-700-568h@2x.png */; };
+		40CB03FB1C3A959900D129ED /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F41C3A959900D129ED /* LaunchImage-700@2x.png */; };
+		40CB03FC1C3A959900D129ED /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F51C3A959900D129ED /* LaunchImage-800-667h@2x.png */; };
+		40CB03FD1C3A959900D129ED /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F61C3A959900D129ED /* LaunchImage-800-Portrait-736h@3x.png */; };
+		40CB03FE1C3A959900D129ED /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F71C3A959900D129ED /* LaunchImage.png */; };
+		40CB03FF1C3A959900D129ED /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F81C3A959900D129ED /* LaunchImage@2x.png */; };
+		40D335801C3A54A500DDA008 /* DZYAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D3357E1C3A54A500DDA008 /* DZYAdViewController.m */; };
+		40D335811C3A54A500DDA008 /* DZYAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D3357F1C3A54A500DDA008 /* DZYAdViewController.xib */; };
+		40D843221C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D843211C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m */; };
+		40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D843241C3A1BE200986EC6 /* DZYNavigationController.m */; };
+		40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8432B1C3A1EF200986EC6 /* DZYSettingViewController.m */; };
 		5CFD2110D88FC8A09F95E3DF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFD1D51BABE6FD16007577A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +68,32 @@
 		403494D71C35964F00C35E15 /* DZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTabBar.m; sourceTree = "<group>"; };
 		403494D91C359A2C00C35E15 /* UIView+DZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DZYExtension.h"; sourceTree = "<group>"; };
 		403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DZYExtension.m"; sourceTree = "<group>"; };
+		40810CA51C3AD0A00080A9FA /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		40810CA81C3AD0EE0080A9FA /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		408A87A31C394516006D0908 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		408A87A41C394516006D0908 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		40CB03EB1C3A861800D129ED /* DZYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYConst.h; sourceTree = "<group>"; };
+		40CB03EC1C3A861800D129ED /* DZYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYConst.m; sourceTree = "<group>"; };
+		40CB03EE1C3A8C6800D129ED /* DZYAdModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAdModal.h; sourceTree = "<group>"; };
+		40CB03EF1C3A8C6800D129ED /* DZYAdModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYAdModal.m; sourceTree = "<group>"; };
+		40CB03F21C3A959900D129ED /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		40CB03F31C3A959900D129ED /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		40CB03F41C3A959900D129ED /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		40CB03F51C3A959900D129ED /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		40CB03F61C3A959900D129ED /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		40CB03F71C3A959900D129ED /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		40CB03F81C3A959900D129ED /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		40D3357D1C3A54A500DDA008 /* DZYAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAdViewController.h; sourceTree = "<group>"; };
+		40D3357E1C3A54A500DDA008 /* DZYAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYAdViewController.m; sourceTree = "<group>"; };
+		40D3357F1C3A54A500DDA008 /* DZYAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYAdViewController.xib; sourceTree = "<group>"; };
+		40D843201C3A129300986EC6 /* UIBarButtonItem+DZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DZYExtension.h"; sourceTree = "<group>"; };
+		40D843211C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DZYExtension.m"; sourceTree = "<group>"; };
+		40D843231C3A1BE200986EC6 /* DZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYNavigationController.h; sourceTree = "<group>"; };
+		40D843241C3A1BE200986EC6 /* DZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYNavigationController.m; sourceTree = "<group>"; };
+		40D8432A1C3A1EF200986EC6 /* DZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYSettingViewController.h; sourceTree = "<group>"; };
+		40D8432B1C3A1EF200986EC6 /* DZYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYSettingViewController.m; sourceTree = "<group>"; };
 		868E32A6A843F6968728DDC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C29A3CA166483454F8CD7AFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFD1D51BABE6FD16007577A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +141,7 @@
 		403494851C35846700C35E15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40CB03F11C3A959900D129ED /* 启动图片 */,
 				403494911C35846700C35E15 /* Assets.xcassets */,
 				403494961C35846700C35E15 /* Info.plist */,
 			);
@@ -107,13 +151,15 @@
 		4034949C1C35851500C35E15 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				40D335791C3A548900DDA008 /* Ad(广告) */,
+				40D843261C3A1EBD00986EC6 /* Setting(设置) */,
 				4034949D1C35851500C35E15 /* Essence(精华) */,
 				403494A11C35851500C35E15 /* FriendTrends(关注) */,
 				403494A51C35851500C35E15 /* Me(我) */,
 				403494A91C35851500C35E15 /* New(新帖) */,
 				403494B91C35851500C35E15 /* Publish(发布) */,
-				403494AD1C35851500C35E15 /* Other(其它) */,
 				403494B61C35851500C35E15 /* Public(公共库) */,
+				403494AD1C35851500C35E15 /* Other(其它) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -260,6 +306,8 @@
 				403494AF1C35851500C35E15 /* AppDelegate.m */,
 				403494B31C35851500C35E15 /* main.m */,
 				403494C01C358A5500C35E15 /* PrefixHeader.pch */,
+				40CB03EB1C3A861800D129ED /* DZYConst.h */,
+				40CB03EC1C3A861800D129ED /* DZYConst.m */,
 			);
 			path = "Other(其它)";
 			sourceTree = "<group>";
@@ -269,6 +317,8 @@
 			children = (
 				403494B11C35851500C35E15 /* DZYTabBarViewController.h */,
 				403494B21C35851500C35E15 /* DZYTabBarViewController.m */,
+				40D843231C3A1BE200986EC6 /* DZYNavigationController.h */,
+				40D843241C3A1BE200986EC6 /* DZYNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,6 +357,12 @@
 				403494C51C358C5C00C35E15 /* UIImage+Image.m */,
 				403494D91C359A2C00C35E15 /* UIView+DZYExtension.h */,
 				403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */,
+				40D843201C3A129300986EC6 /* UIBarButtonItem+DZYExtension.h */,
+				40D843211C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m */,
+				40810CA51C3AD0A00080A9FA /* MBProgressHUD+MJ.h */,
+				40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */,
+				40810CA81C3AD0EE0080A9FA /* NSString+Extension.h */,
+				40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -314,6 +370,8 @@
 		403494B81C35851500C35E15 /* HttpTool */ = {
 			isa = PBXGroup;
 			children = (
+				408A87A31C394516006D0908 /* HttpRequest.h */,
+				408A87A41C394516006D0908 /* HttpRequest.m */,
 			);
 			path = HttpTool;
 			sourceTree = "<group>";
@@ -345,6 +403,89 @@
 			sourceTree = "<group>";
 		};
 		403494BC1C35851500C35E15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40CB03F11C3A959900D129ED /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				40CB03F21C3A959900D129ED /* LaunchImage-568h@2x.png */,
+				40CB03F31C3A959900D129ED /* LaunchImage-700-568h@2x.png */,
+				40CB03F41C3A959900D129ED /* LaunchImage-700@2x.png */,
+				40CB03F51C3A959900D129ED /* LaunchImage-800-667h@2x.png */,
+				40CB03F61C3A959900D129ED /* LaunchImage-800-Portrait-736h@3x.png */,
+				40CB03F71C3A959900D129ED /* LaunchImage.png */,
+				40CB03F81C3A959900D129ED /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
+		40D335791C3A548900DDA008 /* Ad(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				40D3357A1C3A548900DDA008 /* Controller */,
+				40D3357B1C3A548900DDA008 /* Model */,
+				40D3357C1C3A548900DDA008 /* View */,
+			);
+			path = "Ad(广告)";
+			sourceTree = "<group>";
+		};
+		40D3357A1C3A548900DDA008 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40D3357D1C3A54A500DDA008 /* DZYAdViewController.h */,
+				40D3357E1C3A54A500DDA008 /* DZYAdViewController.m */,
+				40D3357F1C3A54A500DDA008 /* DZYAdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		40D3357B1C3A548900DDA008 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40CB03EE1C3A8C6800D129ED /* DZYAdModal.h */,
+				40CB03EF1C3A8C6800D129ED /* DZYAdModal.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40D3357C1C3A548900DDA008 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40D843261C3A1EBD00986EC6 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				40D843271C3A1EBD00986EC6 /* Controller */,
+				40D843281C3A1EBD00986EC6 /* Model */,
+				40D843291C3A1EBD00986EC6 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		40D843271C3A1EBD00986EC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40D8432A1C3A1EF200986EC6 /* DZYSettingViewController.h */,
+				40D8432B1C3A1EF200986EC6 /* DZYSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		40D843281C3A1EBD00986EC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40D843291C3A1EBD00986EC6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -403,7 +544,7 @@
 				TargetAttributes = {
 					403494811C35846700C35E15 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = L7KAY96456;
+						DevelopmentTeam = 39B76WFXQL;
 					};
 				};
 			};
@@ -430,7 +571,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CB03FE1C3A959900D129ED /* LaunchImage.png in Resources */,
+				40CB03FF1C3A959900D129ED /* LaunchImage@2x.png in Resources */,
 				403494921C35846700C35E15 /* Assets.xcassets in Resources */,
+				40CB03FC1C3A959900D129ED /* LaunchImage-800-667h@2x.png in Resources */,
+				40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */,
+				40CB03FB1C3A959900D129ED /* LaunchImage-700@2x.png in Resources */,
+				40CB03FA1C3A959900D129ED /* LaunchImage-700-568h@2x.png in Resources */,
+				40D335811C3A54A500DDA008 /* DZYAdViewController.xib in Resources */,
+				40CB03FD1C3A959900D129ED /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,13 +642,22 @@
 				403494CF1C358F5B00C35E15 /* DZYMeViewController.m in Sources */,
 				403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */,
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
+				40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */,
+				40D335801C3A54A500DDA008 /* DZYAdViewController.m in Sources */,
 				403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */,
 				403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */,
 				403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */,
 				403494D21C358F6B00C35E15 /* DZYNewViewController.m in Sources */,
+				40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */,
+				40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */,
 				403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */,
+				40810CAA1C3AD0EE0080A9FA /* NSString+Extension.m in Sources */,
 				403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */,
+				40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */,
+				40D843221C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m in Sources */,
+				40810CA71C3AD0A00080A9FA /* MBProgressHUD+MJ.m in Sources */,
 				403494BF1C35851500C35E15 /* main.m in Sources */,
+				408A87A51C394516006D0908 /* HttpRequest.m in Sources */,
 				403494C91C358F3700C35E15 /* DZYEssenceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = budejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -609,6 +768,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = budejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

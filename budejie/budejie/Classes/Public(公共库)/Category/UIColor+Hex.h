@@ -10,7 +10,7 @@
 
 @interface UIColor (Hex)
 
-// 默认alpha位1
+// 默认alpha为1
 + (UIColor *)colorWithHexString:(NSString *)color;
 
 //从十六进制字符串获取颜色，

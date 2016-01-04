@@ -14,6 +14,7 @@
 #import "DZYPublishViewController.h"
 
 #import "DZYTabBar.h"
+#import "DZYNavigationController.h"
 
 #define DZYTabBarButtonTitleFont [UIFont systemFontOfSize:14]
 
@@ -60,42 +61,43 @@
 - (void)setupAllChildViewController
 {
     DZYEssenceViewController *essenceVc = [[DZYEssenceViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:essenceVc];
+    DZYNavigationController *nav = [[DZYNavigationController alloc] initWithRootViewController:essenceVc];
+    // initWithRootViewController -> push(vc)
     [self addChildViewController:nav];
     
+    DZYNewViewController *newVc = [[DZYNewViewController alloc] init];
+    DZYNavigationController *nav3 = [[DZYNavigationController alloc] initWithRootViewController:newVc];
+    [self addChildViewController:nav3];
+    
     DZYFriendTrendsViewController *friendTrendsVc = [[DZYFriendTrendsViewController alloc] init];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:friendTrendsVc];
+    DZYNavigationController *nav1 = [[DZYNavigationController alloc] initWithRootViewController:friendTrendsVc];
     [self addChildViewController:nav1];
     
     DZYMeViewController *meVc = [[DZYMeViewController alloc] init];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:meVc];
+    DZYNavigationController *nav2 = [[DZYNavigationController alloc] initWithRootViewController:meVc];
     [self addChildViewController:nav2];
-    
-    DZYNewViewController *newVc = [[DZYNewViewController alloc] init];
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:newVc];
-    [self addChildViewController:nav3];
     
 }
 
 #pragma mark - 设置tabBar上面所有按钮内容
 - (void)setupAllTabBarButton
 {
-    UINavigationController *nav = self.childViewControllers[0];
+    DZYNavigationController *nav = self.childViewControllers[0];
     nav.tabBarItem.title = @"精华";
     nav.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
     nav.tabBarItem.selectedImage = [UIImage imageWithOriginalImageName:@"tabBar_essence_click_icon"];
     
-    UINavigationController *nav1 = self.childViewControllers[1];
+    DZYNavigationController *nav1 = self.childViewControllers[1];
     nav1.tabBarItem.title = @"新帖";
     nav1.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
     nav1.tabBarItem.selectedImage = [UIImage imageWithOriginalImageName:@"tabBar_new_click_icon"];
     
-    UINavigationController *nav2 = self.childViewControllers[2];
+    DZYNavigationController *nav2 = self.childViewControllers[2];
     nav2.tabBarItem.title = @"关注";
     nav2.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
     nav2.tabBarItem.selectedImage = [UIImage imageWithOriginalImageName:@"tabBar_friendTrends_click_icon"];
     
-    UINavigationController *nav3 = self.childViewControllers[3];
+    DZYNavigationController *nav3 = self.childViewControllers[3];
     nav3.tabBarItem.title = @"我";
     nav3.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
     nav3.tabBarItem.selectedImage = [UIImage imageWithOriginalImageName:@"tabBar_me_click_icon"];

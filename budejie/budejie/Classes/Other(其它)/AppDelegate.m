@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DZYTabBarViewController.h"
+#import "DZYAdViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,15 +16,21 @@
 
 @implementation AppDelegate
 
+// 广告界面:什么时候进入广告,程序每次运行就会进入广告
+// 实现方式:把一个广告view添加到窗口上,只不过这个广告界面根启动图片相似(假象 误以为是启动图片)
+// 广告界面不是启动图,启动界面不能处理业务逻辑
 
+// 程序启动完成就会调用该方法
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    DZYTabBarViewController *tabBarVc = [[DZYTabBarViewController alloc] init];
+    // 设置根控制器,进入广告界面
+//    DZYTabBarViewController *tabBarVc = [[DZYTabBarViewController alloc] init];
+    DZYAdViewController *adVc = [[DZYAdViewController alloc] init];
     
-    self.window.rootViewController = tabBarVc;
+    self.window.rootViewController = adVc;
     
     [self.window makeKeyAndVisible];
     

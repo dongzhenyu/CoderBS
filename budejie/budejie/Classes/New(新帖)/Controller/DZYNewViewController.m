@@ -18,21 +18,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = DZYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
+    [self setupNavBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 设置导航条
+- (void)setupNavBar
+{
+    // UINavigationItem:决定导航条内容
+    // UIBarButtonItem:决定导航条上按钮的内容
+    
+    // left
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(clickSubTag)];
+    
+    
+    
+    // titleView
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 点击标签按钮
+- (void)clickSubTag
+{
+    
 }
-*/
 
 @end
