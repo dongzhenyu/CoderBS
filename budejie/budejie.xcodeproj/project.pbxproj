@@ -22,7 +22,20 @@
 		403494DB1C359A2C00C35E15 /* UIView+DZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494DA1C359A2C00C35E15 /* UIView+DZYExtension.m */; };
 		40810CA71C3AD0A00080A9FA /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */; };
 		40810CAA1C3AD0EE0080A9FA /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */; };
+		4081ABC91C3DFBB800A6D86D /* DZYLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4081ABC81C3DFBB800A6D86D /* DZYLoginRegisterView.m */; };
+		4081ABCB1C3DFBCE00A6D86D /* DZYLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4081ABCA1C3DFBCE00A6D86D /* DZYLoginRegisterView.xib */; };
+		40880D661C3B593500BB34BE /* DZYSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40880D651C3B593500BB34BE /* DZYSubTagViewController.m */; };
+		40880D691C3B5FD300BB34BE /* DZYTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40880D681C3B5FD300BB34BE /* DZYTagModel.m */; };
+		40880D6D1C3B698600BB34BE /* DZYTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40880D6B1C3B698600BB34BE /* DZYTagCell.m */; };
+		40880D6E1C3B698600BB34BE /* DZYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40880D6C1C3B698600BB34BE /* DZYTagCell.xib */; };
+		40880D701C3B9C3100BB34BE /* DZYFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40880D6F1C3B9C3100BB34BE /* DZYFriendTrendsViewController.xib */; };
+		40880D9C1C3BA70200BB34BE /* DZYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40880D9A1C3BA70200BB34BE /* DZYLoginRegisterViewController.m */; };
+		40880D9D1C3BA70200BB34BE /* DZYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40880D9B1C3BA70200BB34BE /* DZYLoginRegisterViewController.xib */; };
 		408A87A51C394516006D0908 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 408A87A41C394516006D0908 /* HttpRequest.m */; };
+		40A143251C3E82AD00367AAA /* DZYFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A143241C3E82AD00367AAA /* DZYFastLoginView.m */; };
+		40A143271C3E82CF00367AAA /* DZYFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A143261C3E82CF00367AAA /* DZYFastLoginView.xib */; };
+		40A1432A1C3E870800367AAA /* DZYFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A143291C3E870800367AAA /* DZYFastLoginButton.m */; };
+		40A1432D1C3E89D000367AAA /* DZYInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A1432C1C3E89D000367AAA /* DZYInputTextField.m */; };
 		40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EC1C3A861800D129ED /* DZYConst.m */; };
 		40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EF1C3A8C6800D129ED /* DZYAdModal.m */; };
 		40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F21C3A959900D129ED /* LaunchImage-568h@2x.png */; };
@@ -72,8 +85,29 @@
 		40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		40810CA81C3AD0EE0080A9FA /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		4081ABC71C3DFBB800A6D86D /* DZYLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYLoginRegisterView.h; sourceTree = "<group>"; };
+		4081ABC81C3DFBB800A6D86D /* DZYLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYLoginRegisterView.m; sourceTree = "<group>"; };
+		4081ABCA1C3DFBCE00A6D86D /* DZYLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYLoginRegisterView.xib; sourceTree = "<group>"; };
+		40880D641C3B593500BB34BE /* DZYSubTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYSubTagViewController.h; sourceTree = "<group>"; };
+		40880D651C3B593500BB34BE /* DZYSubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYSubTagViewController.m; sourceTree = "<group>"; };
+		40880D671C3B5FD300BB34BE /* DZYTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTagModel.h; sourceTree = "<group>"; };
+		40880D681C3B5FD300BB34BE /* DZYTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTagModel.m; sourceTree = "<group>"; };
+		40880D6A1C3B698600BB34BE /* DZYTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTagCell.h; sourceTree = "<group>"; };
+		40880D6B1C3B698600BB34BE /* DZYTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTagCell.m; sourceTree = "<group>"; };
+		40880D6C1C3B698600BB34BE /* DZYTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYTagCell.xib; sourceTree = "<group>"; };
+		40880D6F1C3B9C3100BB34BE /* DZYFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		40880D991C3BA70200BB34BE /* DZYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYLoginRegisterViewController.h; sourceTree = "<group>"; };
+		40880D9A1C3BA70200BB34BE /* DZYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYLoginRegisterViewController.m; sourceTree = "<group>"; };
+		40880D9B1C3BA70200BB34BE /* DZYLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		408A87A31C394516006D0908 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		408A87A41C394516006D0908 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		40A143231C3E82AD00367AAA /* DZYFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYFastLoginView.h; sourceTree = "<group>"; };
+		40A143241C3E82AD00367AAA /* DZYFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYFastLoginView.m; sourceTree = "<group>"; };
+		40A143261C3E82CF00367AAA /* DZYFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYFastLoginView.xib; sourceTree = "<group>"; };
+		40A143281C3E870800367AAA /* DZYFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYFastLoginButton.h; sourceTree = "<group>"; };
+		40A143291C3E870800367AAA /* DZYFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYFastLoginButton.m; sourceTree = "<group>"; };
+		40A1432B1C3E89D000367AAA /* DZYInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYInputTextField.h; sourceTree = "<group>"; };
+		40A1432C1C3E89D000367AAA /* DZYInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYInputTextField.m; sourceTree = "<group>"; };
 		40CB03EB1C3A861800D129ED /* DZYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYConst.h; sourceTree = "<group>"; };
 		40CB03EC1C3A861800D129ED /* DZYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYConst.m; sourceTree = "<group>"; };
 		40CB03EE1C3A8C6800D129ED /* DZYAdModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAdModal.h; sourceTree = "<group>"; };
@@ -212,6 +246,10 @@
 			children = (
 				403494CA1C358F4B00C35E15 /* DZYFriendTrendsViewController.h */,
 				403494CB1C358F4B00C35E15 /* DZYFriendTrendsViewController.m */,
+				40880D6F1C3B9C3100BB34BE /* DZYFriendTrendsViewController.xib */,
+				40880D991C3BA70200BB34BE /* DZYLoginRegisterViewController.h */,
+				40880D9A1C3BA70200BB34BE /* DZYLoginRegisterViewController.m */,
+				40880D9B1C3BA70200BB34BE /* DZYLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +264,16 @@
 		403494A41C35851500C35E15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4081ABC71C3DFBB800A6D86D /* DZYLoginRegisterView.h */,
+				4081ABC81C3DFBB800A6D86D /* DZYLoginRegisterView.m */,
+				4081ABCA1C3DFBCE00A6D86D /* DZYLoginRegisterView.xib */,
+				40A143231C3E82AD00367AAA /* DZYFastLoginView.h */,
+				40A143241C3E82AD00367AAA /* DZYFastLoginView.m */,
+				40A143261C3E82CF00367AAA /* DZYFastLoginView.xib */,
+				40A143281C3E870800367AAA /* DZYFastLoginButton.h */,
+				40A143291C3E870800367AAA /* DZYFastLoginButton.m */,
+				40A1432B1C3E89D000367AAA /* DZYInputTextField.h */,
+				40A1432C1C3E89D000367AAA /* DZYInputTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +326,8 @@
 			children = (
 				403494D01C358F6B00C35E15 /* DZYNewViewController.h */,
 				403494D11C358F6B00C35E15 /* DZYNewViewController.m */,
+				40880D641C3B593500BB34BE /* DZYSubTagViewController.h */,
+				40880D651C3B593500BB34BE /* DZYSubTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +335,8 @@
 		403494AB1C35851500C35E15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				40880D671C3B5FD300BB34BE /* DZYTagModel.h */,
+				40880D681C3B5FD300BB34BE /* DZYTagModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +344,9 @@
 		403494AC1C35851500C35E15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40880D6A1C3B698600BB34BE /* DZYTagCell.h */,
+				40880D6B1C3B698600BB34BE /* DZYTagCell.m */,
+				40880D6C1C3B698600BB34BE /* DZYTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -571,14 +626,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40880D6E1C3B698600BB34BE /* DZYTagCell.xib in Resources */,
 				40CB03FE1C3A959900D129ED /* LaunchImage.png in Resources */,
 				40CB03FF1C3A959900D129ED /* LaunchImage@2x.png in Resources */,
+				40880D9D1C3BA70200BB34BE /* DZYLoginRegisterViewController.xib in Resources */,
+				40A143271C3E82CF00367AAA /* DZYFastLoginView.xib in Resources */,
 				403494921C35846700C35E15 /* Assets.xcassets in Resources */,
 				40CB03FC1C3A959900D129ED /* LaunchImage-800-667h@2x.png in Resources */,
 				40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */,
+				4081ABCB1C3DFBCE00A6D86D /* DZYLoginRegisterView.xib in Resources */,
 				40CB03FB1C3A959900D129ED /* LaunchImage-700@2x.png in Resources */,
 				40CB03FA1C3A959900D129ED /* LaunchImage-700-568h@2x.png in Resources */,
 				40D335811C3A54A500DDA008 /* DZYAdViewController.xib in Resources */,
+				40880D701C3B9C3100BB34BE /* DZYFriendTrendsViewController.xib in Resources */,
 				40CB03FD1C3A959900D129ED /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,14 +700,19 @@
 			files = (
 				403494DB1C359A2C00C35E15 /* UIView+DZYExtension.m in Sources */,
 				403494CF1C358F5B00C35E15 /* DZYMeViewController.m in Sources */,
+				40880D691C3B5FD300BB34BE /* DZYTagModel.m in Sources */,
 				403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */,
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
+				40880D9C1C3BA70200BB34BE /* DZYLoginRegisterViewController.m in Sources */,
 				40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */,
+				4081ABC91C3DFBB800A6D86D /* DZYLoginRegisterView.m in Sources */,
 				40D335801C3A54A500DDA008 /* DZYAdViewController.m in Sources */,
 				403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */,
 				403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */,
 				403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */,
 				403494D21C358F6B00C35E15 /* DZYNewViewController.m in Sources */,
+				40A1432A1C3E870800367AAA /* DZYFastLoginButton.m in Sources */,
+				40A1432D1C3E89D000367AAA /* DZYInputTextField.m in Sources */,
 				40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */,
 				40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */,
 				403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */,
@@ -655,9 +720,12 @@
 				403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */,
 				40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */,
 				40D843221C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m in Sources */,
+				40880D6D1C3B698600BB34BE /* DZYTagCell.m in Sources */,
 				40810CA71C3AD0A00080A9FA /* MBProgressHUD+MJ.m in Sources */,
+				40A143251C3E82AD00367AAA /* DZYFastLoginView.m in Sources */,
 				403494BF1C35851500C35E15 /* main.m in Sources */,
 				408A87A51C394516006D0908 /* HttpRequest.m in Sources */,
+				40880D661C3B593500BB34BE /* DZYSubTagViewController.m in Sources */,
 				403494C91C358F3700C35E15 /* DZYEssenceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

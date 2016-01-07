@@ -68,6 +68,8 @@
     // 非根控制器才需要设置
     if (self.childViewControllers.count) {
         
+        viewController.hidesBottomBarWhenPushed = YES;
+        
         // 只要把系统的返回按钮覆盖 就不会再有滑动返回功能
         // 没有消失,只是失效了.代理做了事情.
 //        DZYLog(@"%@", self.interactivePopGestureRecognizer);

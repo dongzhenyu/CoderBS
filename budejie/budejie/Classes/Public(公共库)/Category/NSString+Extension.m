@@ -79,7 +79,7 @@
     NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA1_DIGEST_LENGTH];
     CCHmac(kCCHmacAlgSHA1, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
-    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:mutableData.length];
+    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
 }
 
 - (NSString *)hmacSHA256StringWithKey:(NSString *)key
@@ -88,7 +88,7 @@
     NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA256_DIGEST_LENGTH];
     CCHmac(kCCHmacAlgSHA256, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
-    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:mutableData.length];
+    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
 }
 
 - (NSString *)hmacSHA512StringWithKey:(NSString *)key
@@ -97,7 +97,7 @@
     NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA512_DIGEST_LENGTH];
     CCHmac(kCCHmacAlgSHA512, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
-    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:mutableData.length];
+    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
 }
 
 #pragma mark - Helpers
@@ -198,21 +198,21 @@
         }else if ([self isThisToDay:createDate]){
             if (components.hour >= 1) {// 大于60分钟：xx小时前
                 if (components.hour <= 24) {
-                    formatter.dateFormat = [NSString stringWithFormat:@"%d小时前",components.hour];
+                    formatter.dateFormat = [NSString stringWithFormat:@"%ld小时前",(long)components.hour];
                 }
                 else
                 {
-                    formatter.dateFormat = [NSString stringWithFormat:@"%d天前",components.day];
+                    formatter.dateFormat = [NSString stringWithFormat:@"%ld天前",(long)components.day];
                 }
                 }else if (components.minute >= 1){// 1分~59分内：xx分钟前
-                formatter.dateFormat = [NSString stringWithFormat:@"%d分钟前",components.minute];
+                formatter.dateFormat = [NSString stringWithFormat:@"%ld分钟前",(long)components.minute];
             }else{// 1分内： 刚刚
                             formatter.dateFormat = @"刚刚";
             }
             return [formatter stringFromDate:createDate];
         }else{// 今年的其他日子
             if (components.day <= 7) {
-                formatter.dateFormat = [NSString stringWithFormat:@"%d天前",components.day];
+                formatter.dateFormat = [NSString stringWithFormat:@"%ld天前",(long)components.day];
                  return [formatter stringFromDate:createDate];
             }
             else

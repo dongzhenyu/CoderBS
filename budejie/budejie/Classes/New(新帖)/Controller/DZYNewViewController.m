@@ -7,6 +7,7 @@
 //
 
 #import "DZYNewViewController.h"
+#import "DZYSubTagViewController.h"
 
 @interface DZYNewViewController ()
 
@@ -30,8 +31,6 @@
     // left
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(clickSubTag)];
     
-    
-    
     // titleView
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
 }
@@ -39,7 +38,9 @@
 // 点击标签按钮
 - (void)clickSubTag
 {
-    
+    DZYSubTagViewController *subTag = [[DZYSubTagViewController alloc] init];
+//    subTag.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:subTag animated:YES];
 }
 
 @end

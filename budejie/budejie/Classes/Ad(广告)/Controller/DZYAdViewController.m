@@ -24,6 +24,9 @@ static NSString * const  code2 = @"phcqnauGuHYkFMRquANhmgN_IauBThfqmgKsUARhIWdGU
 /** <#type#> */
 @property (nonatomic, strong) DZYAdModal *adModal;
 
+/** <#type#> */
+@property (nonatomic, weak) NSTimer *timer;
+
 @end
 
 @implementation DZYAdViewController
@@ -36,7 +39,7 @@ static NSString * const  code2 = @"phcqnauGuHYkFMRquANhmgN_IauBThfqmgKsUARhIWdGU
     // 加载广告数据
     [self loadAdData];
     // 添加定时器
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
     
 }
 
@@ -94,7 +97,7 @@ static NSString * const  code2 = @"phcqnauGuHYkFMRquANhmgN_IauBThfqmgKsUARhIWdGU
     time--;
     
     // 设置跳转按钮
-    [self.jumpButton setTitle:[NSString stringWithFormat:@" 跳转(%d) ",time] forState:UIControlStateNormal];
+    [self.jumpButton setTitle:[NSString stringWithFormat:@" 跳过(%d) ",time] forState:UIControlStateNormal];
     
 }
 
@@ -106,6 +109,8 @@ static NSString * const  code2 = @"phcqnauGuHYkFMRquANhmgN_IauBThfqmgKsUARhIWdGU
     
     [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVc;
     
+    // 销毁定时器
+    [self.timer invalidate];
 }
 
 - (void)setupLauchImage

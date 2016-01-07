@@ -7,6 +7,7 @@
 //
 
 #import "DZYFriendTrendsViewController.h"
+#import "DZYLoginRegisterViewController.h"
 
 @interface DZYFriendTrendsViewController ()
 
@@ -14,9 +15,15 @@
 
 @implementation DZYFriendTrendsViewController
 
+- (IBAction)loginBtnClick:(id)sender {
+    
+    DZYLoginRegisterViewController *loginVc = [[DZYLoginRegisterViewController alloc] init];
+    [self presentViewController:loginVc animated:YES completion:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = DZYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
+
     // 设置导航条
     [self setupNavBar];
 }
