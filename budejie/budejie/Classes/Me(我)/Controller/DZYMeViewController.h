@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DZYMeViewController : UIViewController
+@interface DZYMeViewController : UITableViewController
 
 @end

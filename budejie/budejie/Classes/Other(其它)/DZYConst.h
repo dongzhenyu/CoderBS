@@ -10,3 +10,12 @@
 
 /** 广告请求路径 */
 UIKIT_EXTERN  NSString * const DZYAdRequestURL;
+
+/** 统一请求路径 */
+UIKIT_EXTERN  NSString * const BaseRequestURL;
+
+/** 统一间距 */
+UIKIT_EXTERN  CGFloat const DZYMargin;
+
+/** 导航条最大Y值 */
+UIKIT_EXTERN  CGFloat const DZYNavY;

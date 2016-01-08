@@ -73,7 +73,11 @@
     DZYNavigationController *nav1 = [[DZYNavigationController alloc] initWithRootViewController:friendTrendsVc];
     [self addChildViewController:nav1];
     
-    DZYMeViewController *meVc = [[DZYMeViewController alloc] init];
+    // 加载storyboard文件
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:NSStringFromClass([DZYMeViewController class]) bundle:nil];
+    // 加载storyboard描述的控制器,加载箭头指向
+    DZYMeViewController *meVc = [storyboard instantiateInitialViewController];
+
     DZYNavigationController *nav2 = [[DZYNavigationController alloc] initWithRootViewController:meVc];
     [self addChildViewController:nav2];
     

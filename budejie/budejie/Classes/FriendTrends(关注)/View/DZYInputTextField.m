@@ -24,10 +24,11 @@
     self.tintColor = [UIColor whiteColor];
     
     // 初始化占位文字
-    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
-    attr[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
-    NSAttributedString *attrS = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attr];
-    self.attributedPlaceholder = attrS;
+//    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
+//    attr[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+//    NSAttributedString *attrS = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attr];
+//    self.attributedPlaceholder = attrS;
+    self.placeholderColor = [UIColor lightGrayColor];
     
     // 监听文本框:1.代理(🙅) 2.addtarget 3.通知
     // 封装自己类,做好不要自己成为自己的代理,导致别人使用不好使.
@@ -44,18 +45,20 @@
 {
     // 2.设置占位文字颜色
     // 创建描述文本的字典
-    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
-    attr[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    NSAttributedString *attrS = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attr];
-    self.attributedPlaceholder = attrS;
+//    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
+//    attr[NSForegroundColorAttributeName] = [UIColor whiteColor];
+//    NSAttributedString *attrS = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attr];
+//    self.attributedPlaceholder = attrS;
+    self.placeholderColor = [UIColor whiteColor];
 }
 
 - (void)textEnd
 {
     // 创建描述文本的字典
-    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
-    attr[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
-    NSAttributedString *attrS = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attr];
-    self.attributedPlaceholder = attrS;
+//    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
+//    attr[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+//    NSAttributedString *attrS = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attr];
+//    self.attributedPlaceholder = attrS;
+    self.placeholderColor = [UIColor lightGrayColor];
 }
 @end

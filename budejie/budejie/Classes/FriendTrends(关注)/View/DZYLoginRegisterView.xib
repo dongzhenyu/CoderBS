@@ -54,11 +54,17 @@
                         <constraint firstAttribute="height" constant="30" id="uLe-4k-6HM"/>
                     </constraints>
                     <state key="normal" title="登陆" backgroundImage="loginBtnBg"/>
+                    <connections>
+                        <action selector="loginBtnClick:" destination="-1" eventType="touchUpInside" id="iZL-5Y-gbl"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOQ-vd-Wuq">
                     <rect key="frame" x="234" y="212" width="68" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="忘记密码?"/>
+                    <connections>
+                        <action selector="forgetBtnClick:" destination="-1" eventType="touchUpInside" id="hZS-HV-Kaw"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -123,6 +129,9 @@
                         <constraint firstAttribute="height" constant="30" id="kfY-lV-31d"/>
                     </constraints>
                     <state key="normal" title="注册" backgroundImage="loginBtnBg"/>
+                    <connections>
+                        <action selector="registerBtnClick:" destination="-1" eventType="touchUpInside" id="xYQ-ud-EOU"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

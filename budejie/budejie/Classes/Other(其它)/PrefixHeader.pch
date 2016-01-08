@@ -16,6 +16,7 @@
 #import "UIBarButtonItem+DZYExtension.h"
 #import "NSString+Extension.h"
 #import "MBProgressHUD+MJ.h"
+#import "UITextField+Placeholder.h"
 
 // 日志输出
 #ifdef DEBUG // 开发阶段-DEBUG阶段:使用Log
@@ -29,6 +30,7 @@
 // 颜色
 #define DZYARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0];
 #define DZYColor(r, g, b) DZYARGBColor(255, (r), (g), (b))
+#define DZYRandomColor DZYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
 
 #define DZYWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/dongzhenyu/Desktop/%@.plist", filename] atomically:YES];
 

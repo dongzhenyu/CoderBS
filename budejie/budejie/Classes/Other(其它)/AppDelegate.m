@@ -27,10 +27,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     // 设置根控制器,进入广告界面
-//    DZYTabBarViewController *tabBarVc = [[DZYTabBarViewController alloc] init];
-    DZYAdViewController *adVc = [[DZYAdViewController alloc] init];
+    DZYTabBarViewController *tabBarVc = [[DZYTabBarViewController alloc] init];
+//    DZYAdViewController *adVc = [[DZYAdViewController alloc] init];
     
-    self.window.rootViewController = adVc;
+    self.window.rootViewController = tabBarVc;
     
     [self.window makeKeyAndVisible];
     

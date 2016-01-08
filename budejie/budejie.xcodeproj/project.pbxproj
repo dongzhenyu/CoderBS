@@ -36,6 +36,13 @@
 		40A143271C3E82CF00367AAA /* DZYFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A143261C3E82CF00367AAA /* DZYFastLoginView.xib */; };
 		40A1432A1C3E870800367AAA /* DZYFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A143291C3E870800367AAA /* DZYFastLoginButton.m */; };
 		40A1432D1C3E89D000367AAA /* DZYInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A1432C1C3E89D000367AAA /* DZYInputTextField.m */; };
+		40A143301C3EA67500367AAA /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A1432F1C3EA67500367AAA /* UITextField+Placeholder.m */; };
+		40A143321C3EADDE00367AAA /* DZYMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A143311C3EADDE00367AAA /* DZYMeViewController.storyboard */; };
+		40A143361C3EB8CF00367AAA /* DZYSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A143341C3EB8CF00367AAA /* DZYSquareCell.m */; };
+		40A143371C3EB8CF00367AAA /* DZYSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A143351C3EB8CF00367AAA /* DZYSquareCell.xib */; };
+		40A1433A1C3EBD3500367AAA /* DZYSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A143391C3EBD3500367AAA /* DZYSquareModel.m */; };
+		40A1433E1C3EC93F00367AAA /* DZYHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A1433C1C3EC93F00367AAA /* DZYHtmlViewController.m */; };
+		40A1433F1C3EC93F00367AAA /* DZYHtmlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A1433D1C3EC93F00367AAA /* DZYHtmlViewController.xib */; };
 		40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EC1C3A861800D129ED /* DZYConst.m */; };
 		40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EF1C3A8C6800D129ED /* DZYAdModal.m */; };
 		40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F21C3A959900D129ED /* LaunchImage-568h@2x.png */; };
@@ -50,6 +57,7 @@
 		40D843221C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D843211C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m */; };
 		40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D843241C3A1BE200986EC6 /* DZYNavigationController.m */; };
 		40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8432B1C3A1EF200986EC6 /* DZYSettingViewController.m */; };
+		40F58AF11C3F5B8F006FFD29 /* DZYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F58AF01C3F5B8F006FFD29 /* DZYTitleButton.m */; };
 		5CFD2110D88FC8A09F95E3DF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFD1D51BABE6FD16007577A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +116,17 @@
 		40A143291C3E870800367AAA /* DZYFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYFastLoginButton.m; sourceTree = "<group>"; };
 		40A1432B1C3E89D000367AAA /* DZYInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYInputTextField.h; sourceTree = "<group>"; };
 		40A1432C1C3E89D000367AAA /* DZYInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYInputTextField.m; sourceTree = "<group>"; };
+		40A1432E1C3EA67500367AAA /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		40A1432F1C3EA67500367AAA /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
+		40A143311C3EADDE00367AAA /* DZYMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DZYMeViewController.storyboard; sourceTree = "<group>"; };
+		40A143331C3EB8CF00367AAA /* DZYSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYSquareCell.h; sourceTree = "<group>"; };
+		40A143341C3EB8CF00367AAA /* DZYSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYSquareCell.m; sourceTree = "<group>"; };
+		40A143351C3EB8CF00367AAA /* DZYSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYSquareCell.xib; sourceTree = "<group>"; };
+		40A143381C3EBD3500367AAA /* DZYSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYSquareModel.h; sourceTree = "<group>"; };
+		40A143391C3EBD3500367AAA /* DZYSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYSquareModel.m; sourceTree = "<group>"; };
+		40A1433B1C3EC93F00367AAA /* DZYHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYHtmlViewController.h; sourceTree = "<group>"; };
+		40A1433C1C3EC93F00367AAA /* DZYHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYHtmlViewController.m; sourceTree = "<group>"; };
+		40A1433D1C3EC93F00367AAA /* DZYHtmlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYHtmlViewController.xib; sourceTree = "<group>"; };
 		40CB03EB1C3A861800D129ED /* DZYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYConst.h; sourceTree = "<group>"; };
 		40CB03EC1C3A861800D129ED /* DZYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYConst.m; sourceTree = "<group>"; };
 		40CB03EE1C3A8C6800D129ED /* DZYAdModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAdModal.h; sourceTree = "<group>"; };
@@ -128,6 +147,8 @@
 		40D843241C3A1BE200986EC6 /* DZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYNavigationController.m; sourceTree = "<group>"; };
 		40D8432A1C3A1EF200986EC6 /* DZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYSettingViewController.h; sourceTree = "<group>"; };
 		40D8432B1C3A1EF200986EC6 /* DZYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYSettingViewController.m; sourceTree = "<group>"; };
+		40F58AEF1C3F5B8F006FFD29 /* DZYTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTitleButton.h; sourceTree = "<group>"; };
+		40F58AF01C3F5B8F006FFD29 /* DZYTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTitleButton.m; sourceTree = "<group>"; };
 		868E32A6A843F6968728DDC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C29A3CA166483454F8CD7AFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFD1D51BABE6FD16007577A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +248,8 @@
 		403494A01C35851500C35E15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40F58AEF1C3F5B8F006FFD29 /* DZYTitleButton.h */,
+				40F58AF01C3F5B8F006FFD29 /* DZYTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +316,10 @@
 			children = (
 				403494CD1C358F5B00C35E15 /* DZYMeViewController.h */,
 				403494CE1C358F5B00C35E15 /* DZYMeViewController.m */,
+				40A143311C3EADDE00367AAA /* DZYMeViewController.storyboard */,
+				40A1433B1C3EC93F00367AAA /* DZYHtmlViewController.h */,
+				40A1433C1C3EC93F00367AAA /* DZYHtmlViewController.m */,
+				40A1433D1C3EC93F00367AAA /* DZYHtmlViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +327,8 @@
 		403494A71C35851500C35E15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				40A143381C3EBD3500367AAA /* DZYSquareModel.h */,
+				40A143391C3EBD3500367AAA /* DZYSquareModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +336,9 @@
 		403494A81C35851500C35E15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40A143331C3EB8CF00367AAA /* DZYSquareCell.h */,
+				40A143341C3EB8CF00367AAA /* DZYSquareCell.m */,
+				40A143351C3EB8CF00367AAA /* DZYSquareCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +450,8 @@
 				40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */,
 				40810CA81C3AD0EE0080A9FA /* NSString+Extension.h */,
 				40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */,
+				40A1432E1C3EA67500367AAA /* UITextField+Placeholder.h */,
+				40A1432F1C3EA67500367AAA /* UITextField+Placeholder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -627,6 +661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40880D6E1C3B698600BB34BE /* DZYTagCell.xib in Resources */,
+				40A1433F1C3EC93F00367AAA /* DZYHtmlViewController.xib in Resources */,
 				40CB03FE1C3A959900D129ED /* LaunchImage.png in Resources */,
 				40CB03FF1C3A959900D129ED /* LaunchImage@2x.png in Resources */,
 				40880D9D1C3BA70200BB34BE /* DZYLoginRegisterViewController.xib in Resources */,
@@ -635,6 +670,8 @@
 				40CB03FC1C3A959900D129ED /* LaunchImage-800-667h@2x.png in Resources */,
 				40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */,
 				4081ABCB1C3DFBCE00A6D86D /* DZYLoginRegisterView.xib in Resources */,
+				40A143321C3EADDE00367AAA /* DZYMeViewController.storyboard in Resources */,
+				40A143371C3EB8CF00367AAA /* DZYSquareCell.xib in Resources */,
 				40CB03FB1C3A959900D129ED /* LaunchImage-700@2x.png in Resources */,
 				40CB03FA1C3A959900D129ED /* LaunchImage-700-568h@2x.png in Resources */,
 				40D335811C3A54A500DDA008 /* DZYAdViewController.xib in Resources */,
@@ -701,6 +738,8 @@
 				403494DB1C359A2C00C35E15 /* UIView+DZYExtension.m in Sources */,
 				403494CF1C358F5B00C35E15 /* DZYMeViewController.m in Sources */,
 				40880D691C3B5FD300BB34BE /* DZYTagModel.m in Sources */,
+				40A143301C3EA67500367AAA /* UITextField+Placeholder.m in Sources */,
+				40A1433A1C3EBD3500367AAA /* DZYSquareModel.m in Sources */,
 				403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */,
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
 				40880D9C1C3BA70200BB34BE /* DZYLoginRegisterViewController.m in Sources */,
@@ -716,9 +755,11 @@
 				40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */,
 				40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */,
 				403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */,
+				40A1433E1C3EC93F00367AAA /* DZYHtmlViewController.m in Sources */,
 				40810CAA1C3AD0EE0080A9FA /* NSString+Extension.m in Sources */,
 				403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */,
 				40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */,
+				40F58AF11C3F5B8F006FFD29 /* DZYTitleButton.m in Sources */,
 				40D843221C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m in Sources */,
 				40880D6D1C3B698600BB34BE /* DZYTagCell.m in Sources */,
 				40810CA71C3AD0A00080A9FA /* MBProgressHUD+MJ.m in Sources */,
@@ -727,6 +768,7 @@
 				408A87A51C394516006D0908 /* HttpRequest.m in Sources */,
 				40880D661C3B593500BB34BE /* DZYSubTagViewController.m in Sources */,
 				403494C91C358F3700C35E15 /* DZYEssenceViewController.m in Sources */,
+				40A143361C3EB8CF00367AAA /* DZYSquareCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

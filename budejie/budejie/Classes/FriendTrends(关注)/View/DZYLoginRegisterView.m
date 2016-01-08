@@ -15,6 +15,18 @@
 @end
 
 @implementation DZYLoginRegisterView
+// 登陆按钮点击
+- (IBAction)loginBtnClick:(id)sender {
+    DZYLogFunc;
+}
+// 注册按钮点击
+- (IBAction)registerBtnClick:(id)sender {
+    DZYLogFunc;
+}
+// 忘记密码按钮点击
+- (IBAction)forgetBtnClick:(id)sender {
+    DZYLogFunc;
+}
 
 - (void)awakeFromNib
 {
