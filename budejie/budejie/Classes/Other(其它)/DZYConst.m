@@ -19,3 +19,9 @@ CGFloat const DZYMargin = 10;
 
 /** 导航条最大Y值 */
 CGFloat const DZYNavY = 64;
+
+/** 工具条高度 */
+CGFloat const DZYTitleH = 35;
+
+/** tabBar高度 */
+CGFloat const DZYTabBarH = 49;

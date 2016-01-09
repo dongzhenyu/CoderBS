@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DZYHtmlViewController">
             <connections>
-                <outlet property="ContentView" destination="EEx-Ge-t6V" id="qAI-tr-4mm"/>
+                <outlet property="ContentView" destination="ys1-JL-HVP" id="Qm6-Ei-6UK"/>
                 <outlet property="backItem" destination="hrf-vU-y82" id="TqT-UR-XIm"/>
                 <outlet property="forwardItem" destination="Tfu-tL-QvF" id="JK1-dM-8dT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -18,32 +18,44 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEx-Ge-t6V">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-JL-HVP" userLabel="WebView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                </webView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-E7-QHA">
                     <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="qWQ-hv-4gT"/>
                     </constraints>
                     <items>
-                        <barButtonItem image="arrow_left" id="hrf-vU-y82"/>
-                        <barButtonItem image="arrow_right" id="Tfu-tL-QvF"/>
+                        <barButtonItem image="arrow_left" id="hrf-vU-y82">
+                            <connections>
+                                <action selector="back:" destination="-1" id="1HJ-Bt-GuY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="arrow_right" id="Tfu-tL-QvF">
+                            <connections>
+                                <action selector="forward:" destination="-1" id="avP-XO-pTx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="v6A-7r-oUW"/>
-                        <barButtonItem systemItem="refresh" id="dfG-bS-ZvZ"/>
+                        <barButtonItem systemItem="refresh" id="dfG-bS-ZvZ">
+                            <connections>
+                                <action selector="refresh:" destination="-1" id="QBQ-yi-6Be"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="EEx-Ge-t6V" secondAttribute="trailing" id="20n-2j-Dj5"/>
-                <constraint firstItem="EEx-Ge-t6V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Chm-yA-CiN"/>
-                <constraint firstItem="EEx-Ge-t6V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dyb-Qn-G10"/>
+                <constraint firstAttribute="bottom" secondItem="ys1-JL-HVP" secondAttribute="bottom" id="K12-NF-ynx"/>
                 <constraint firstItem="MPJ-E7-QHA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lr1-BI-UqC"/>
-                <constraint firstAttribute="bottom" secondItem="EEx-Ge-t6V" secondAttribute="bottom" id="Mee-yE-WZK"/>
+                <constraint firstItem="ys1-JL-HVP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mgn-WX-NAj"/>
                 <constraint firstAttribute="trailing" secondItem="MPJ-E7-QHA" secondAttribute="trailing" id="SIU-fK-EeJ"/>
                 <constraint firstAttribute="bottom" secondItem="MPJ-E7-QHA" secondAttribute="bottom" id="Tsp-dl-CkU"/>
+                <constraint firstItem="ys1-JL-HVP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W0m-pf-Bob"/>
+                <constraint firstAttribute="trailing" secondItem="ys1-JL-HVP" secondAttribute="trailing" id="eyY-Nf-BK1"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>

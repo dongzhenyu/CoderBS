@@ -19,3 +19,9 @@ UIKIT_EXTERN  CGFloat const DZYMargin;
 
 /** 导航条最大Y值 */
 UIKIT_EXTERN  CGFloat const DZYNavY;
+
+/** 工具条高度 */
+UIKIT_EXTERN  CGFloat const DZYTitleH;
+
+/** tabBar高度 */
+UIKIT_EXTERN  CGFloat const DZYTabBarH;

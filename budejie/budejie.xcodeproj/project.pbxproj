@@ -43,6 +43,8 @@
 		40A1433A1C3EBD3500367AAA /* DZYSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A143391C3EBD3500367AAA /* DZYSquareModel.m */; };
 		40A1433E1C3EC93F00367AAA /* DZYHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A1433C1C3EC93F00367AAA /* DZYHtmlViewController.m */; };
 		40A1433F1C3EC93F00367AAA /* DZYHtmlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A1433D1C3EC93F00367AAA /* DZYHtmlViewController.xib */; };
+		40A538231C3FD04E00F939F5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A538221C3FD04D00F939F5 /* WebKit.framework */; };
+		40A538271C3FD99600F939F5 /* DZYFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A538261C3FD99600F939F5 /* DZYFileCacheManager.m */; };
 		40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EC1C3A861800D129ED /* DZYConst.m */; };
 		40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CB03EF1C3A8C6800D129ED /* DZYAdModal.m */; };
 		40CB03F91C3A959900D129ED /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CB03F21C3A959900D129ED /* LaunchImage-568h@2x.png */; };
@@ -127,6 +129,9 @@
 		40A1433B1C3EC93F00367AAA /* DZYHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYHtmlViewController.h; sourceTree = "<group>"; };
 		40A1433C1C3EC93F00367AAA /* DZYHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYHtmlViewController.m; sourceTree = "<group>"; };
 		40A1433D1C3EC93F00367AAA /* DZYHtmlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYHtmlViewController.xib; sourceTree = "<group>"; };
+		40A538221C3FD04D00F939F5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		40A538251C3FD99600F939F5 /* DZYFileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYFileCacheManager.h; sourceTree = "<group>"; };
+		40A538261C3FD99600F939F5 /* DZYFileCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYFileCacheManager.m; sourceTree = "<group>"; };
 		40CB03EB1C3A861800D129ED /* DZYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYConst.h; sourceTree = "<group>"; };
 		40CB03EC1C3A861800D129ED /* DZYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYConst.m; sourceTree = "<group>"; };
 		40CB03EE1C3A8C6800D129ED /* DZYAdModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAdModal.h; sourceTree = "<group>"; };
@@ -159,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A538231C3FD04E00F939F5 /* WebKit.framework in Frameworks */,
 				5CFD2110D88FC8A09F95E3DF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +435,7 @@
 		403494B61C35851500C35E15 /* Public(公共库) */ = {
 			isa = PBXGroup;
 			children = (
+				40A538241C3FD96700F939F5 /* FileCache */,
 				403494B71C35851500C35E15 /* Category */,
 				403494B81C35851500C35E15 /* HttpTool */,
 			);
@@ -496,6 +503,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		40A538241C3FD96700F939F5 /* FileCache */ = {
+			isa = PBXGroup;
+			children = (
+				40A538251C3FD99600F939F5 /* DZYFileCacheManager.h */,
+				40A538261C3FD99600F939F5 /* DZYFileCacheManager.m */,
+			);
+			path = FileCache;
 			sourceTree = "<group>";
 		};
 		40CB03F11C3A959900D129ED /* 启动图片 */ = {
@@ -593,6 +609,7 @@
 		84B9099682D52D40F7531CB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40A538221C3FD04D00F939F5 /* WebKit.framework */,
 				DDFD1D51BABE6FD16007577A /* libPods.a */,
 			);
 			name = Frameworks;
@@ -741,6 +758,7 @@
 				40A143301C3EA67500367AAA /* UITextField+Placeholder.m in Sources */,
 				40A1433A1C3EBD3500367AAA /* DZYSquareModel.m in Sources */,
 				403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */,
+				40A538271C3FD99600F939F5 /* DZYFileCacheManager.m in Sources */,
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
 				40880D9C1C3BA70200BB34BE /* DZYLoginRegisterViewController.m in Sources */,
 				40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */,
