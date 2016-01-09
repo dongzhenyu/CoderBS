@@ -9,7 +9,13 @@
 #import "DZYEssenceViewController.h"
 #import "DZYTitleButton.h"
 
-@interface DZYEssenceViewController ()
+#import "DZYAllViewController.h"
+#import "DZYVideoViewController.h"
+#import "DZYVoiceViewController.h"
+#import "DZYPictureViewController.h"
+#import "DZYWordViewController.h"
+
+@interface DZYEssenceViewController () <UIScrollViewDelegate>
 
 /** 标题栏 */
 @property (nonatomic, weak) UIView *titlesView;
@@ -19,6 +25,9 @@
 
 /** 下划线 */
 @property (nonatomic, weak) UIView *underLine;
+
+/** 用来存放所有子控制器的scrollView */
+@property (nonatomic, weak) UIScrollView *scrollView;
 
 @end
 
@@ -33,15 +42,58 @@
     [self setupScrollView];
     // 设置标题栏
     [self setupTitlesView];
+    // 初始化子控制器
+    [self setupAllChildVcs];
 }
 
 #pragma mark - 初始化
+- (void)setupAllChildVcs
+{
+    [self addChildViewController:[[DZYAllViewController alloc] init]];
+    [self addChildViewController:[[DZYVideoViewController alloc] init]];
+    [self addChildViewController:[[DZYVoiceViewController alloc] init]];
+    [self addChildViewController:[[DZYPictureViewController alloc] init]];
+    [self addChildViewController:[[DZYWordViewController alloc] init]];
+    
+    // 内容大小
+    self.scrollView.contentSize = CGSizeMake(self.childViewControllers.count * self.scrollView.width, 0);
+    // 不要自动调整scrollView的内边距
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    // 默认添加第0个控制器的view到scrollView
+    [self addChildVcViewInToScrollView:0];
+    
+}
+
+- (void)addChildVcViewInToScrollView:(NSInteger)index
+{
+    // 添加对应的子控制器view到scrollView上
+    UIViewController *childVc = self.childViewControllers[index];
+    // 如果这个子控制器view已经显示在上面, 就直接返回
+    if (childVc.view.superview) return;
+    
+    [self.scrollView addSubview:childVc.view];
+    
+    // 子控制器view的frame
+    childVc.view.x = index * self.scrollView.width;
+    childVc.view.y = 0;
+    childVc.view.width = self.scrollView.width;
+    childVc.view.height = self.scrollView.height;
+
+}
+
+
 - (void)setupScrollView
 {
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
     scrollView.backgroundColor = DZYRandomColor;
+    scrollView.pagingEnabled = YES;
+    scrollView.delegate = self;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:scrollView];
+    self.scrollView = scrollView;
 }
 
 - (void)setupTitlesView
@@ -69,6 +121,7 @@
     for (NSUInteger i = 0; i < 5; i++) {
         // 创建添加
         DZYTitleButton *titleButton = [DZYTitleButton buttonWithType:UIButtonTypeCustom];
+        titleButton.tag = i;
         [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.titlesView addSubview:titleButton];
         
@@ -101,7 +154,7 @@
     
     [firstTitleButton.titleLabel sizeToFit];// 主动根据文字内容计算按钮内部label的大小
     // 下划线宽度 == 按钮内部文字的宽度
-    underLine.width = firstTitleButton.titleLabel.width + 10;
+    underLine.width = firstTitleButton.titleLabel.width + DZYMargin;
     underLine.centerX = firstTitleButton.centerX;
     
 }
@@ -131,19 +184,44 @@
 - (void)titleClick:(DZYTitleButton *)titleButton
 {
     // 改变按钮状态
-    self.clickTitleButton.selected = NO;
-    titleButton.selected = YES;
+    self.clickTitleButton.selected = NO;// UIControlStateNormal
+    titleButton.selected = YES;// UIControlStateSelected
     self.clickTitleButton = titleButton;
+    
+    // 按钮索引
+    NSInteger index = titleButton.tag;
     
     // 移动下划线
     [UIView animateWithDuration:0.25 animations:^{
-        
         // ios7 开始才是这个方法 之前是UITextAttri
-//        self.underLine.width = [titleButton.currentTitle sizeWithAttributes:@{NSFontAttributeName:titleButton.titleLabel.font}].width;
-        self.underLine.width = titleButton.titleLabel.width + 10;
-        
+        //        self.underLine.width = [titleButton.currentTitle sizeWithAttributes:@{NSFontAttributeName:titleButton.titleLabel.font}].width;
+        // 宽度 == 按钮内部文字的高度
+        self.underLine.width = titleButton.titleLabel.width + DZYMargin;
+        // 中心点x
         self.underLine.centerX = titleButton.centerX;
+        // 滚动scrollView到最新的子控制器界面(这里只需要水平滚动, 只改contentOffset.x)
+        CGPoint offset = self.scrollView.contentOffset;
+        offset.x = index * self.scrollView.width;
+        self.scrollView.contentOffset = offset;
+        
+    } completion:^(BOOL finished) {// 滚动动画完毕
+        // 添加对应的子控制器view到scrollView
+        [self addChildVcViewInToScrollView:index];
     }];
+}
+
+#pragma mark - scrollViewDelegate
+/**
+ * scrollView停止滚动的时候调用(结束减速,速度为0)
+ */
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger index = scrollView.contentOffset.x / scrollView.width;
+    // 点击对应的按钮
+    DZYTitleButton *titleButton = self.titlesView.subviews[index];
+    
+    [self titleClick:titleButton];
+    
 }
 
 @end

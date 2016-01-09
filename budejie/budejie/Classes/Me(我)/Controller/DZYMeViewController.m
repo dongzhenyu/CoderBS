@@ -69,11 +69,13 @@ static NSString * const DZYSquareCellId = @"squareCell";
         CGFloat collectionViewH = rows * itemWH;
         self.collectionView.height = collectionViewH;
         
-        // 设置tableView滚动范围
+        // 设置tableView滚动范围 (会有bug )
         //        self.tableView.contentSize = CGSizeMake(0, CGRectGetMaxY(_collectionView.frame));
         // tableView的滚动范围自己管理,只需要给他指定内容,会自动计算自己的滚动范围.
         // 设置tableView底部视图
         self.tableView.tableFooterView = _collectionView;
+        // 如果出现下面有间距可以再刷新一次tabView
+//        [self.tableView reloadData];
         
     } failure:^(NSError *error) {
         

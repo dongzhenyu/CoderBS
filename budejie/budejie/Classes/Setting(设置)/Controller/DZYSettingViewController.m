@@ -62,15 +62,6 @@ static NSString * const ID = @"cell";
 {
     // 1.创建cell
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    
-
-    // 2.1 获取文件夹里面所有文件
-    // 2.1.1 获取Cache文件夹路径
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-
-    });
 
     //    // 2.设置缓存字符换
     cell.textLabel.text = [self getCacheStr:_total];
@@ -84,7 +75,7 @@ static NSString * const ID = @"cell";
 
     // 清空缓存
     [DZYFileCacheManager deleteFilePath:DZYCachePath];
-    // 获取缓存尺寸
+    // 重新获取缓存尺寸()
     [DZYFileCacheManager getDirectoryCacheSize:DZYCachePath completeBlock:^(NSInteger total) {
         self.total = total;
         [self.tableView reloadData];
@@ -96,7 +87,7 @@ static NSString * const ID = @"cell";
 
 - (NSString *)getCacheStr:(NSInteger)cacheSize
 {
-    DZYLog(@"%ld", cacheSize);
+//    DZYLog(@"%ld", cacheSize);
 
     NSString *cacheStr = [NSString stringWithFormat:@"%ldB",cacheSize];
     

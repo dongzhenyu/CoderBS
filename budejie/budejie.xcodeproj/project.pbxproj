@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402C0D8F1C409DB9007126B8 /* DZYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */; };
+		402C0D921C409DE6007126B8 /* DZYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D911C409DE6007126B8 /* DZYVideoViewController.m */; };
+		402C0D951C409E01007126B8 /* DZYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D941C409E01007126B8 /* DZYVoiceViewController.m */; };
+		402C0D981C409E0F007126B8 /* DZYPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D971C409E0F007126B8 /* DZYPictureViewController.m */; };
+		402C0D9B1C409E17007126B8 /* DZYWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D9A1C409E17007126B8 /* DZYWordViewController.m */; };
 		403494921C35846700C35E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403494911C35846700C35E15 /* Assets.xcassets */; };
 		403494BD1C35851500C35E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494AF1C35851500C35E15 /* AppDelegate.m */; };
 		403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403494B21C35851500C35E15 /* DZYTabBarViewController.m */; };
@@ -64,6 +69,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		402C0D8D1C409DB9007126B8 /* DZYAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAllViewController.h; sourceTree = "<group>"; };
+		402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYAllViewController.m; sourceTree = "<group>"; };
+		402C0D901C409DE6007126B8 /* DZYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYVideoViewController.h; sourceTree = "<group>"; };
+		402C0D911C409DE6007126B8 /* DZYVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYVideoViewController.m; sourceTree = "<group>"; };
+		402C0D931C409E01007126B8 /* DZYVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYVoiceViewController.h; sourceTree = "<group>"; };
+		402C0D941C409E01007126B8 /* DZYVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYVoiceViewController.m; sourceTree = "<group>"; };
+		402C0D961C409E0F007126B8 /* DZYPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPictureViewController.h; sourceTree = "<group>"; };
+		402C0D971C409E0F007126B8 /* DZYPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPictureViewController.m; sourceTree = "<group>"; };
+		402C0D991C409E17007126B8 /* DZYWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYWordViewController.h; sourceTree = "<group>"; };
+		402C0D9A1C409E17007126B8 /* DZYWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYWordViewController.m; sourceTree = "<group>"; };
 		403494821C35846700C35E15 /* budejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = budejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		403494911C35846700C35E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		403494961C35846700C35E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +187,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402C0D8C1C409D77007126B8 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				402C0D8D1C409DB9007126B8 /* DZYAllViewController.h */,
+				402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */,
+				402C0D901C409DE6007126B8 /* DZYVideoViewController.h */,
+				402C0D911C409DE6007126B8 /* DZYVideoViewController.m */,
+				402C0D931C409E01007126B8 /* DZYVoiceViewController.h */,
+				402C0D941C409E01007126B8 /* DZYVoiceViewController.m */,
+				402C0D961C409E0F007126B8 /* DZYPictureViewController.h */,
+				402C0D971C409E0F007126B8 /* DZYPictureViewController.m */,
+				402C0D991C409E17007126B8 /* DZYWordViewController.h */,
+				402C0D9A1C409E17007126B8 /* DZYWordViewController.m */,
+			);
+			path = Topic;
+			sourceTree = "<group>";
+		};
 		403494791C35846700C35E15 = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +270,7 @@
 		4034949E1C35851500C35E15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				402C0D8C1C409D77007126B8 /* Topic */,
 				403494C71C358F3700C35E15 /* DZYEssenceViewController.h */,
 				403494C81C358F3700C35E15 /* DZYEssenceViewController.m */,
 			);
@@ -764,6 +797,8 @@
 				40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */,
 				4081ABC91C3DFBB800A6D86D /* DZYLoginRegisterView.m in Sources */,
 				40D335801C3A54A500DDA008 /* DZYAdViewController.m in Sources */,
+				402C0D8F1C409DB9007126B8 /* DZYAllViewController.m in Sources */,
+				402C0D981C409E0F007126B8 /* DZYPictureViewController.m in Sources */,
 				403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */,
 				403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */,
 				403494C31C358C5100C35E15 /* UIColor+Hex.m in Sources */,
@@ -772,10 +807,13 @@
 				40A1432D1C3E89D000367AAA /* DZYInputTextField.m in Sources */,
 				40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */,
 				40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */,
+				402C0D951C409E01007126B8 /* DZYVoiceViewController.m in Sources */,
 				403494D51C358F7800C35E15 /* DZYPublishViewController.m in Sources */,
+				402C0D921C409DE6007126B8 /* DZYVideoViewController.m in Sources */,
 				40A1433E1C3EC93F00367AAA /* DZYHtmlViewController.m in Sources */,
 				40810CAA1C3AD0EE0080A9FA /* NSString+Extension.m in Sources */,
 				403494BE1C35851500C35E15 /* DZYTabBarViewController.m in Sources */,
+				402C0D9B1C409E17007126B8 /* DZYWordViewController.m in Sources */,
 				40CB03ED1C3A861800D129ED /* DZYConst.m in Sources */,
 				40F58AF11C3F5B8F006FFD29 /* DZYTitleButton.m in Sources */,
 				40D843221C3A129300986EC6 /* UIBarButtonItem+DZYExtension.m in Sources */,
