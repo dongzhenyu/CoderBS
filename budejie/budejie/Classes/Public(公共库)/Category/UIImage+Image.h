@@ -19,4 +19,8 @@
  */
 + (UIImage *)imageWithOriginalImageName:(NSString *)imageName;
 
+- (instancetype)dzy_circleImage;
+
++ (instancetype)dzy_circleImageNamed:(NSString *)name;
+
 @end

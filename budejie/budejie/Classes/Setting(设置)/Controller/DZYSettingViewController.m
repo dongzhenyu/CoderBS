@@ -23,6 +23,12 @@
 
 static NSString * const ID = @"cell";
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
