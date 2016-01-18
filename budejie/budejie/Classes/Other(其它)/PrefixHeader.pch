@@ -21,6 +21,7 @@
 #import "UIImageView+Header.h"
 #import "NSCalendar+Init.h"
 #import "NSDate+Interval.h"
+#import "UIImageView+Download.h"
 
 // 日志输出
 #ifdef DEBUG // 开发阶段-DEBUG阶段:使用Log

@@ -8,6 +8,9 @@
 
 #import "DZYTopicCell.h"
 #import "DZYTopicModel.h"
+#import "DZYTopicPictureView.h"
+#import "DZYTopicVoiceView.h"
+#import "DZYTopicVideoView.h"
 
 @interface DZYTopicCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -23,9 +26,65 @@
 /** 最热评论内容 */
 @property (weak, nonatomic) IBOutlet UILabel *topCmtLabel;
 
+// 中间控件
+/** 图片控件 */
+@property (nonatomic, weak) DZYTopicPictureView *pictureView;
+/** 声音控件 */
+@property (nonatomic, weak) DZYTopicVoiceView *voiceView;
+/** 视频控件 */
+@property (nonatomic, weak) DZYTopicVideoView *videoView;
+
 @end
 
 @implementation DZYTopicCell
+
+#pragma mark - lazy
+- (DZYTopicPictureView *)pictureView
+{
+    if (!_pictureView) {
+        DZYTopicPictureView *pictureView = [DZYTopicPictureView viewFromXib];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+- (DZYTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        DZYTopicVoiceView *voiceView = [DZYTopicVoiceView viewFromXib];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+- (DZYTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        DZYTopicVideoView *videoView = [DZYTopicVideoView viewFromXib];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+
+
+#pragma mark - 初始化
+- (void)awakeFromNib
+{
+    self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    if (self.topicModel.type == DZYTopicTypePicture) {
+        self.pictureView.frame = self.topicModel.centerF;
+    } else if (self.topicModel.type == DZYTopicTypeVoice) {
+        self.voiceView.frame = self.topicModel.centerF;
+    } else if (self.topicModel.type == DZYTopicTypeVideo) {
+        self.videoView.frame = self.topicModel.centerF;
+    }
+}
 
 - (void)setTopicModel:(DZYTopicModel *)topicModel
 {
@@ -44,7 +103,7 @@
     [self setupButtonTitle:self.caiButton number:topicModel.cai placeholder:@"踩"];
     [self setupButtonTitle:self.repostButton number:topicModel.repost placeholder:@"分享"];
     [self setupButtonTitle:self.dingButton number:topicModel.comment placeholder:@"评论"];
-    
+
     // 最热评论
     if (topicModel.top_cmt.count) { // 有
         self.topCmtView.hidden = NO;
@@ -55,6 +114,29 @@
     } else { // 没有
         self.topCmtView.hidden = YES;
     }
+    
+    // 根据模型类型设置中间内容
+    if (topicModel.type == DZYTopicTypePicture) {
+        self.pictureView.hidden = NO;
+        self.pictureView.topicModel = topicModel;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topicModel.type == DZYTopicTypeVoice) {
+        self.voiceView.hidden = NO;
+        self.voiceView.topicModel = topicModel;
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topicModel.type == DZYTopicTypeVideo) {
+        self.videoView.hidden = NO;
+        self.videoView.topicModel = topicModel;
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+    } else if (topicModel.type == DZYTopicTypeWord) {
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+    }
+    
 }
 
 /**

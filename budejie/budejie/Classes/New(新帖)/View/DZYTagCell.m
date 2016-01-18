@@ -40,9 +40,16 @@
     _tagModel = tagModel;
     
     self.nameLabel.text = tagModel.theme_name;
-    [self.iocnImageView sd_setImageWithURL:[NSURL URLWithString:tagModel.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    [self.iocnImageView sd_setImageWithURL:[NSURL URLWithString:tagModel.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.iocnImageView dzy_setHeader:tagModel.image_list];
     
-    self.numLabel.text = [NSString stringWithFormat:@"%ld", tagModel.sub_number];
+    NSString *str = [NSString stringWithFormat:@"%ld人订阅", tagModel.sub_number];
+    if (tagModel.sub_number > 10000) {
+        CGFloat num = tagModel.sub_number / 10000.0;
+        str = [NSString stringWithFormat:@"%.1f万人订阅", num];
+    }
+    
+    self.numLabel.text = str;
 }
 
 @end

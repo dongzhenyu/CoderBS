@@ -41,16 +41,36 @@ typedef NS_ENUM(NSInteger, DZYTopicType) {
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
 /** 帖子类型 */
-@property (nonatomic, assign) NSInteger type;
+@property (nonatomic, assign) DZYTopicType type;
 /** 最热评论 */
 @property (nonatomic, strong) NSArray *top_cmt;
+
+/** 小图 */
+@property (nonatomic, copy) NSString *image0;
+/** 中图 */
+@property (nonatomic, copy) NSString *image2;
+/** 大图 */
+@property (nonatomic, copy) NSString *image1;
+/** 是否为动态图 */
+@property (nonatomic, assign) BOOL is_gif;
 
 /** 图片的高度 */
 @property (nonatomic, assign) CGFloat height;
 /** 图片的宽度 */
 @property (nonatomic, assign) CGFloat width;
 
+/** 音频的时长(单位:s) */
+@property (nonatomic, assign) NSInteger voicetime;
+/** 视频的时长(单位:s) */
+@property (nonatomic, assign) NSInteger videotime;
+/** 播放数量 */
+@property (nonatomic, assign) NSInteger playcount;
+
 /***** 额外增加的属性(方便开发) *****/
 /** cell的高度 */
-//@property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, assign) CGFloat cellHeight;
+/** cell中间内容的frame */
+@property (nonatomic, assign) CGRect centerF;
+/** 是否为超长图片 */
+@property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture;
 @end

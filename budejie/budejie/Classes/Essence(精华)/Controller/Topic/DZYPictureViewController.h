@@ -6,8 +6,8 @@
 //  Copyright © 2016年 董震宇. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DZYTopicViewController.h"
 
-@interface DZYPictureViewController : UITableViewController
+@interface DZYPictureViewController : DZYTopicViewController
 
 @end
