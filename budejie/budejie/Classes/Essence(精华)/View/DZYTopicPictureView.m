@@ -27,6 +27,11 @@
     [self.window.rootViewController presentViewController:seeBigVc animated:YES completion:nil];
     
 }
+- (IBAction)seeBigP {
+    DZYSeeBigPictureViewController *seeBigVc = [[DZYSeeBigPictureViewController alloc] init];
+    seeBigVc.topicModel = self.topicModel;
+    [self.window.rootViewController presentViewController:seeBigVc animated:YES completion:nil];
+}
 
 - (void)awakeFromNib
 {

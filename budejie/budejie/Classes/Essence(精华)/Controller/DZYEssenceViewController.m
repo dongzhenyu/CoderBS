@@ -87,7 +87,7 @@
 {
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
-    scrollView.backgroundColor = DZYRandomColor;
+    scrollView.backgroundColor =  DZYColor(200, 200, 200);
     scrollView.pagingEnabled = YES;
     scrollView.delegate = self;
     scrollView.showsHorizontalScrollIndicator = NO;

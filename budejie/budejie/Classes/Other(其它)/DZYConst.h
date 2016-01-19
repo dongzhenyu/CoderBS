@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/** App的相册名字 */
+UIKIT_EXTERN NSString * const DZYAssetCollectionTitle;
+
 /** 广告请求路径 */
 UIKIT_EXTERN  NSString * const DZYAdRequestURL;
 

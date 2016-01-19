@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/** App的相册名字 */
+NSString * const DZYAssetCollectionTitle = @"百思";
+
 /** 广告请求路径 */
 NSString * const DZYAdRequestURL = @"http://mobads.baidu.com/cpro/ui/mads.php";
 
