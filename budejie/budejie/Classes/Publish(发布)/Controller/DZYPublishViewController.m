@@ -15,12 +15,25 @@
 /** 标语 */
 @property (nonatomic, weak) UIImageView *sloganView;
 
+/** 按钮 */
+@property (nonatomic, strong) NSMutableArray *buttons;
+
 /** 动画时间 */
 @property (nonatomic, strong) NSArray *times;
 
 @end
 
 @implementation DZYPublishViewController
+
+static CGFloat const DZYSpringFactor = 10;
+
+- (NSMutableArray *)buttons
+{
+    if (!_buttons) {
+        _buttons = [NSMutableArray array];
+    }
+    return _buttons;
+}
 
 - (NSArray *)times
 {
@@ -42,6 +55,9 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBar.hidden = YES;
+
+    // 禁止交互
+    self.view.userInteractionEnabled = NO;
     
     // 设置标语
     [self setupSloganView];
@@ -61,11 +77,16 @@
     self.sloganView = sloganView;
 
     // 动画
+    __weak typeof(self) weakSelf = self;
     POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
     anim.toValue = @(sloganY);
-    anim.springSpeed = 10;
-    anim.springBounciness = 10;
+    anim.springSpeed = DZYSpringFactor;
+    anim.springBounciness = DZYSpringFactor;
     anim.beginTime = CACurrentMediaTime() + [self.times.lastObject doubleValue];
+    [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
+        // 开始交互
+        weakSelf.view.userInteractionEnabled = YES;
+    }];
     [sloganView.layer pop_addAnimation:anim forKey:nil];
     
 }
@@ -85,7 +106,9 @@
     
     for (int i = 0; i < count; i++) {
         DZYPublishButton *pulishButton = [DZYPublishButton buttonWithType:UIButtonTypeCustom];
+//        pulishButton.width = -1;
         [pulishButton addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.buttons addObject:pulishButton];
         [self.view addSubview:pulishButton];
         
         // 设置内容
@@ -101,8 +124,8 @@
         POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         anim.fromValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonY - DZYScreenH, buttonW, buttonH)];
         anim.toValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonY, buttonW, buttonH)];
-        anim.springSpeed = 10;
-        anim.springBounciness = 10;
+        anim.springSpeed = DZYSpringFactor;
+        anim.springBounciness = DZYSpringFactor;
         // CACurrentMediaTime() 获得的是当前的时间
         anim.beginTime = CACurrentMediaTime() + [self.times[i] doubleValue];
         [pulishButton pop_addAnimation:anim forKey:nil];
@@ -117,7 +140,33 @@
     
 }
 - (IBAction)cancelClick {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // 禁止交互
+    self.view.userInteractionEnabled = NO;
+    
+    // 让按钮执行动画
+    for (int i = 0; i < self.buttons.count; i++) {
+        DZYPublishButton *publishButton = self.buttons[i];
+        POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+        anim.toValue = @(publishButton.layer.position.y + DZYScreenH);
+        anim.beginTime = CACurrentMediaTime() + [self.times[i] doubleValue];
+        [publishButton.layer pop_addAnimation:anim forKey:nil];
+    }
+    
+    __weak typeof(self) weakSelf = self;
+    // 让标题执行动画
+    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    anim.toValue = @(self.sloganView.layer.position.y + DZYScreenH);
+    anim.beginTime = CACurrentMediaTime() + [self.times.lastObject doubleValue];
+    [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
+        [weakSelf dismissViewControllerAnimated:NO completion:nil];
+    }];
+    [self.sloganView.layer pop_addAnimation:anim forKey:nil];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self cancelClick];
 }
 
 
