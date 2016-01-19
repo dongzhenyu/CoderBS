@@ -9,6 +9,8 @@
 #import "DZYPublishViewController.h"
 #import <POP.h>
 #import "DZYPublishButton.h"
+#import "DZYPostWordViewController.h"
+#import "DZYNavigationController.h"
 
 @interface DZYPublishViewController ()
 
@@ -20,6 +22,9 @@
 
 /** 动画时间 */
 @property (nonatomic, strong) NSArray *times;
+
+/** <#type#> */
+@property (nonatomic, weak) DZYPublishButton *publishBtn;
 
 @end
 
@@ -115,6 +120,8 @@ static CGFloat const DZYSpringFactor = 10;
         [pulishButton setTitle:titles[i] forState:UIControlStateNormal];
         [pulishButton setImage:[UIImage imageNamed:images[i]] forState:UIControlStateNormal];
         
+        self.publishBtn = pulishButton;
+        
         // frame
         CGFloat buttonX = (i % maxColsCount) * buttonW;
         CGFloat buttonY = buttonStartY + (i / maxColsCount) * buttonH;
@@ -133,14 +140,37 @@ static CGFloat const DZYSpringFactor = 10;
 
 }
 
-
 #pragma mark - 按钮点击
 - (void)buttonClick:(DZYPublishButton *)button
 {
+    // 按钮索引
+    NSInteger index = [self.buttons indexOfObject:button];
     
+    switch (index) {
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2: {// 发段子
+            DZYPostWordViewController *postWordVc = [[DZYPostWordViewController alloc] init];
+            postWordVc.wordBtn = button;
+            [self presentViewController:[[DZYNavigationController alloc] initWithRootViewController:postWordVc] animated:YES completion:nil];
+            break;
+        }
+        case 3:
+            break;
+        case 4:
+            break;
+        default:
+            break;
+    }
 }
-- (IBAction)cancelClick {
-    
+
+/**
+ *  退出动画
+ */
+- (void)exit:(void(^)())task
+{
     // 禁止交互
     self.view.userInteractionEnabled = NO;
     
@@ -156,17 +186,28 @@ static CGFloat const DZYSpringFactor = 10;
     __weak typeof(self) weakSelf = self;
     // 让标题执行动画
     POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
-    anim.toValue = @(self.sloganView.layer.position.y + DZYScreenH);
+    anim.toValue = @(self.sloganView.layer.position.x + DZYScreenH);
     anim.beginTime = CACurrentMediaTime() + [self.times.lastObject doubleValue];
     [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
         [weakSelf dismissViewControllerAnimated:NO completion:nil];
+        
+        // 可能会做其他事情
+//        if (task) task();
+        !task ? :task();
+        
     }];
     [self.sloganView.layer pop_addAnimation:anim forKey:nil];
+    
+}
+
+#pragma mark - 点击
+- (IBAction)cancelClick {
+    [self exit:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self cancelClick];
+    [self exit:nil];
 }
 
 

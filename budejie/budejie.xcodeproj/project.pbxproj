@@ -19,6 +19,8 @@
 		401A5E5A1C4671BD00F913C6 /* NSCalendar+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 401A5E591C4671BD00F913C6 /* NSCalendar+Init.m */; };
 		401A5E5D1C46725400F913C6 /* NSDate+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = 401A5E5C1C46725400F913C6 /* NSDate+Interval.m */; };
 		401C121E1C4E2274006C4690 /* DZYPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C121D1C4E2274006C4690 /* DZYPublishButton.m */; };
+		401C12211C4E4CB9006C4690 /* DZYPostWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C12201C4E4CB9006C4690 /* DZYPostWordViewController.m */; };
+		401C12241C4E59B8006C4690 /* DZYPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C12231C4E59B8006C4690 /* DZYPlaceholderTextView.m */; };
 		402C0D8F1C409DB9007126B8 /* DZYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */; };
 		402C0D921C409DE6007126B8 /* DZYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D911C409DE6007126B8 /* DZYVideoViewController.m */; };
 		402C0D951C409E01007126B8 /* DZYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D941C409E01007126B8 /* DZYVoiceViewController.m */; };
@@ -116,6 +118,10 @@
 		401A5E5C1C46725400F913C6 /* NSDate+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Interval.m"; sourceTree = "<group>"; };
 		401C121C1C4E2274006C4690 /* DZYPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPublishButton.h; sourceTree = "<group>"; };
 		401C121D1C4E2274006C4690 /* DZYPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPublishButton.m; sourceTree = "<group>"; };
+		401C121F1C4E4CB9006C4690 /* DZYPostWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPostWordViewController.h; sourceTree = "<group>"; };
+		401C12201C4E4CB9006C4690 /* DZYPostWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPostWordViewController.m; sourceTree = "<group>"; };
+		401C12221C4E59B8006C4690 /* DZYPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPlaceholderTextView.h; sourceTree = "<group>"; };
+		401C12231C4E59B8006C4690 /* DZYPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPlaceholderTextView.m; sourceTree = "<group>"; };
 		402C0D8D1C409DB9007126B8 /* DZYAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAllViewController.h; sourceTree = "<group>"; };
 		402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYAllViewController.m; sourceTree = "<group>"; };
 		402C0D901C409DE6007126B8 /* DZYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYVideoViewController.h; sourceTree = "<group>"; };
@@ -644,6 +650,8 @@
 				403494D31C358F7800C35E15 /* DZYPublishViewController.h */,
 				403494D41C358F7800C35E15 /* DZYPublishViewController.m */,
 				40364D0A1C4D5CD00019B3F0 /* DZYPublishViewController.xib */,
+				401C121F1C4E4CB9006C4690 /* DZYPostWordViewController.h */,
+				401C12201C4E4CB9006C4690 /* DZYPostWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -660,6 +668,8 @@
 			children = (
 				401C121C1C4E2274006C4690 /* DZYPublishButton.h */,
 				401C121D1C4E2274006C4690 /* DZYPublishButton.m */,
+				401C12221C4E59B8006C4690 /* DZYPlaceholderTextView.h */,
+				401C12231C4E59B8006C4690 /* DZYPlaceholderTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -945,6 +955,7 @@
 				401A5E5D1C46725400F913C6 /* NSDate+Interval.m in Sources */,
 				401C121E1C4E2274006C4690 /* DZYPublishButton.m in Sources */,
 				402C0D981C409E0F007126B8 /* DZYPictureViewController.m in Sources */,
+				401C12241C4E59B8006C4690 /* DZYPlaceholderTextView.m in Sources */,
 				40364D091C4D34110019B3F0 /* DZYFooter.m in Sources */,
 				403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */,
 				403494C61C358C5C00C35E15 /* UIImage+Image.m in Sources */,
@@ -954,6 +965,7 @@
 				40A1432A1C3E870800367AAA /* DZYFastLoginButton.m in Sources */,
 				4071AF511C4BE5310045044C /* DZYTopicVideoView.m in Sources */,
 				40A1432D1C3E89D000367AAA /* DZYInputTextField.m in Sources */,
+				401C12211C4E4CB9006C4690 /* DZYPostWordViewController.m in Sources */,
 				40D843251C3A1BE200986EC6 /* DZYNavigationController.m in Sources */,
 				40D8432C1C3A1EF200986EC6 /* DZYSettingViewController.m in Sources */,
 				402C0D951C409E01007126B8 /* DZYVoiceViewController.m in Sources */,
