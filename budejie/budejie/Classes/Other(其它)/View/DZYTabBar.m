@@ -59,8 +59,7 @@
 - (void)publishButtonClick
 {
     DZYPublishViewController *publishVc = [[DZYPublishViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:publishVc];
-    [self.window.rootViewController presentViewController:nav animated:YES completion:nil];
+    [self.window.rootViewController presentViewController:publishVc animated:YES completion:nil];
 }
 
 /**

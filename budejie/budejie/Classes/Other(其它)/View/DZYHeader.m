@@ -47,6 +47,8 @@
 - (void)placeSubviews
 {
     [super placeSubviews];
+    self.arrowView.x = -self.width;
+    
     self.logoView.centerX = self.width * 0.5;
     self.logoView.y = -self.logoView.height;
 }

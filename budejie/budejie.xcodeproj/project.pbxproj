@@ -21,6 +21,9 @@
 		401C121E1C4E2274006C4690 /* DZYPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C121D1C4E2274006C4690 /* DZYPublishButton.m */; };
 		401C12211C4E4CB9006C4690 /* DZYPostWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C12201C4E4CB9006C4690 /* DZYPostWordViewController.m */; };
 		401C12241C4E59B8006C4690 /* DZYPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C12231C4E59B8006C4690 /* DZYPlaceholderTextView.m */; };
+		401C12271C4E8B6F006C4690 /* DZYPostWordToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C12261C4E8B6F006C4690 /* DZYPostWordToolBar.m */; };
+		401C12291C4E8B85006C4690 /* DZYPostWordToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 401C12281C4E8B85006C4690 /* DZYPostWordToolBar.xib */; };
+		401C122C1C4EA15B006C4690 /* DZYAddTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401C122B1C4EA15B006C4690 /* DZYAddTagViewController.m */; };
 		402C0D8F1C409DB9007126B8 /* DZYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */; };
 		402C0D921C409DE6007126B8 /* DZYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D911C409DE6007126B8 /* DZYVideoViewController.m */; };
 		402C0D951C409E01007126B8 /* DZYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C0D941C409E01007126B8 /* DZYVoiceViewController.m */; };
@@ -55,6 +58,7 @@
 		4071AF511C4BE5310045044C /* DZYTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4071AF501C4BE5310045044C /* DZYTopicVideoView.m */; };
 		4071AF531C4BE53A0045044C /* DZYTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4071AF521C4BE53A0045044C /* DZYTopicVideoView.xib */; };
 		4071AF561C4BE9DD0045044C /* UIImageView+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 4071AF551C4BE9DD0045044C /* UIImageView+Download.m */; };
+		4079B5D41C4FDE370061B210 /* DZYTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4079B5D31C4FDE370061B210 /* DZYTagButton.m */; };
 		40810CA71C3AD0A00080A9FA /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */; };
 		40810CAA1C3AD0EE0080A9FA /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40810CA91C3AD0EE0080A9FA /* NSString+Extension.m */; };
 		4081ABC91C3DFBB800A6D86D /* DZYLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4081ABC81C3DFBB800A6D86D /* DZYLoginRegisterView.m */; };
@@ -122,6 +126,11 @@
 		401C12201C4E4CB9006C4690 /* DZYPostWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPostWordViewController.m; sourceTree = "<group>"; };
 		401C12221C4E59B8006C4690 /* DZYPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPlaceholderTextView.h; sourceTree = "<group>"; };
 		401C12231C4E59B8006C4690 /* DZYPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPlaceholderTextView.m; sourceTree = "<group>"; };
+		401C12251C4E8B6F006C4690 /* DZYPostWordToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYPostWordToolBar.h; sourceTree = "<group>"; };
+		401C12261C4E8B6F006C4690 /* DZYPostWordToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYPostWordToolBar.m; sourceTree = "<group>"; };
+		401C12281C4E8B85006C4690 /* DZYPostWordToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYPostWordToolBar.xib; sourceTree = "<group>"; };
+		401C122A1C4EA15B006C4690 /* DZYAddTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAddTagViewController.h; sourceTree = "<group>"; };
+		401C122B1C4EA15B006C4690 /* DZYAddTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYAddTagViewController.m; sourceTree = "<group>"; };
 		402C0D8D1C409DB9007126B8 /* DZYAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYAllViewController.h; sourceTree = "<group>"; };
 		402C0D8E1C409DB9007126B8 /* DZYAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYAllViewController.m; sourceTree = "<group>"; };
 		402C0D901C409DE6007126B8 /* DZYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYVideoViewController.h; sourceTree = "<group>"; };
@@ -185,6 +194,8 @@
 		4071AF521C4BE53A0045044C /* DZYTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYTopicVideoView.xib; sourceTree = "<group>"; };
 		4071AF541C4BE9DD0045044C /* UIImageView+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Download.h"; sourceTree = "<group>"; };
 		4071AF551C4BE9DD0045044C /* UIImageView+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Download.m"; sourceTree = "<group>"; };
+		4079B5D21C4FDE370061B210 /* DZYTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTagButton.h; sourceTree = "<group>"; };
+		4079B5D31C4FDE370061B210 /* DZYTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTagButton.m; sourceTree = "<group>"; };
 		40810CA51C3AD0A00080A9FA /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		40810CA61C3AD0A00080A9FA /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		40810CA81C3AD0EE0080A9FA /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
@@ -652,6 +663,8 @@
 				40364D0A1C4D5CD00019B3F0 /* DZYPublishViewController.xib */,
 				401C121F1C4E4CB9006C4690 /* DZYPostWordViewController.h */,
 				401C12201C4E4CB9006C4690 /* DZYPostWordViewController.m */,
+				401C122A1C4EA15B006C4690 /* DZYAddTagViewController.h */,
+				401C122B1C4EA15B006C4690 /* DZYAddTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -670,6 +683,11 @@
 				401C121D1C4E2274006C4690 /* DZYPublishButton.m */,
 				401C12221C4E59B8006C4690 /* DZYPlaceholderTextView.h */,
 				401C12231C4E59B8006C4690 /* DZYPlaceholderTextView.m */,
+				401C12251C4E8B6F006C4690 /* DZYPostWordToolBar.h */,
+				401C12261C4E8B6F006C4690 /* DZYPostWordToolBar.m */,
+				401C12281C4E8B85006C4690 /* DZYPostWordToolBar.xib */,
+				4079B5D21C4FDE370061B210 /* DZYTagButton.h */,
+				4079B5D31C4FDE370061B210 /* DZYTagButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -847,6 +865,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40880D6E1C3B698600BB34BE /* DZYTagCell.xib in Resources */,
+				401C12291C4E8B85006C4690 /* DZYPostWordToolBar.xib in Resources */,
 				4071AF491C4BE4CC0045044C /* DZYTopicPictureView.xib in Resources */,
 				401A5E541C451CF600F913C6 /* DZYTopicCell.xib in Resources */,
 				40A1433F1C3EC93F00367AAA /* DZYHtmlViewController.xib in Resources */,
@@ -946,7 +965,9 @@
 				40880D9C1C3BA70200BB34BE /* DZYLoginRegisterViewController.m in Sources */,
 				4071AF4C1C4BE5040045044C /* DZYTopicVoiceView.m in Sources */,
 				40CB03F01C3A8C6800D129ED /* DZYAdModal.m in Sources */,
+				4079B5D41C4FDE370061B210 /* DZYTagButton.m in Sources */,
 				402C0DC11C412F66007126B8 /* DZYTopicModel.m in Sources */,
+				401C12271C4E8B6F006C4690 /* DZYPostWordToolBar.m in Sources */,
 				4081ABC91C3DFBB800A6D86D /* DZYLoginRegisterView.m in Sources */,
 				40D335801C3A54A500DDA008 /* DZYAdViewController.m in Sources */,
 				401A5E5A1C4671BD00F913C6 /* NSCalendar+Init.m in Sources */,
@@ -955,6 +976,7 @@
 				401A5E5D1C46725400F913C6 /* NSDate+Interval.m in Sources */,
 				401C121E1C4E2274006C4690 /* DZYPublishButton.m in Sources */,
 				402C0D981C409E0F007126B8 /* DZYPictureViewController.m in Sources */,
+				401C122C1C4EA15B006C4690 /* DZYAddTagViewController.m in Sources */,
 				401C12241C4E59B8006C4690 /* DZYPlaceholderTextView.m in Sources */,
 				40364D091C4D34110019B3F0 /* DZYFooter.m in Sources */,
 				403494CC1C358F4B00C35E15 /* DZYFriendTrendsViewController.m in Sources */,

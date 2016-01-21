@@ -58,8 +58,6 @@ static CGFloat const DZYSpringFactor = 10;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationController.navigationBar.hidden = YES;
 
     // 禁止交互
     self.view.userInteractionEnabled = NO;
@@ -143,27 +141,29 @@ static CGFloat const DZYSpringFactor = 10;
 #pragma mark - 按钮点击
 - (void)buttonClick:(DZYPublishButton *)button
 {
-    // 按钮索引
-    NSInteger index = [self.buttons indexOfObject:button];
-    
-    switch (index) {
-        case 0:
-            break;
-        case 1:
-            break;
-        case 2: {// 发段子
-            DZYPostWordViewController *postWordVc = [[DZYPostWordViewController alloc] init];
-            postWordVc.wordBtn = button;
-            [self presentViewController:[[DZYNavigationController alloc] initWithRootViewController:postWordVc] animated:YES completion:nil];
-            break;
+    [self exit:^{
+        // 按钮索引
+        NSInteger index = [self.buttons indexOfObject:button];
+        
+        switch (index) {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2: {// 发段子
+                DZYPostWordViewController *postWord = [[DZYPostWordViewController alloc] init];
+                [self.view.window.rootViewController presentViewController:[[DZYNavigationController alloc] initWithRootViewController:postWord] animated:YES completion:nil];
+                break;
+            }
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+                break;
         }
-        case 3:
-            break;
-        case 4:
-            break;
-        default:
-            break;
-    }
+        
+    }];
 }
 
 /**

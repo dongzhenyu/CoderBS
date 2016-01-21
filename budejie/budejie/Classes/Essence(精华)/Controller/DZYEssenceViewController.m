@@ -82,7 +82,6 @@
 
 }
 
-
 - (void)setupScrollView
 {
     UIScrollView *scrollView = [[UIScrollView alloc] init];

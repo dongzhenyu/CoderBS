@@ -25,6 +25,18 @@
     attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
     bar.titleTextAttributes = attrs;
     
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
+    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    
+    // UIControlStateDisabled
+    NSMutableDictionary *disableAttrs = [NSMutableDictionary dictionary];
+    disableAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    [item setTitleTextAttributes:disableAttrs forState:UIControlStateDisabled];
+    
     // 统一设置导航条背景图片
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     

@@ -10,21 +10,19 @@
 
 /** App的相册名字 */
 UIKIT_EXTERN NSString * const DZYAssetCollectionTitle;
-
 /** 广告请求路径 */
-UIKIT_EXTERN  NSString * const DZYAdRequestURL;
-
+UIKIT_EXTERN NSString * const DZYAdRequestURL;
 /** 统一请求路径 */
-UIKIT_EXTERN  NSString * const BaseRequestURL;
-
+UIKIT_EXTERN NSString * const BaseRequestURL;
 /** 统一间距 */
-UIKIT_EXTERN  CGFloat const DZYMargin;
-
+UIKIT_EXTERN CGFloat const DZYMargin;
+/** 统一较小间距 */
+UIKIT_EXTERN CGFloat const DZYSmallMargin;
 /** 导航条最大Y值 */
-UIKIT_EXTERN  CGFloat const DZYNavY;
-
+UIKIT_EXTERN CGFloat const DZYNavY;
 /** 工具条高度 */
-UIKIT_EXTERN  CGFloat const DZYTitleH;
-
+UIKIT_EXTERN CGFloat const DZYTitleH;
 /** tabBar高度 */
-UIKIT_EXTERN  CGFloat const DZYTabBarH;
+UIKIT_EXTERN CGFloat const DZYTabBarH;
+/** 标签的高度 */
+UIKIT_EXTERN CGFloat const DZYTagH;

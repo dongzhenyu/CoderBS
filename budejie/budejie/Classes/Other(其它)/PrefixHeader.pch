@@ -25,12 +25,12 @@
 
 // 日志输出
 #ifdef DEBUG // 开发阶段-DEBUG阶段:使用Log
-#define DZYLog(...) NSLog(__VA_ARGS__)
+#define DZYLog(...) NSLog(__VA_ARGS__);
 #else // 发布阶段-上线阶段:移除Log
 #define DZYLog(...)
 #endif
 // 方法输出
-#define DZYLogFunc DZYLog(@"%s", __func__)
+#define DZYLogFunc DZYLog(@"%s", __func__);
 
 // 颜色
 #define DZYARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0];
@@ -38,7 +38,7 @@
 #define DZYRandomColor DZYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
 
 #define DZYWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/dongzhenyu/Desktop/%@.plist", filename] atomically:YES];
-
+#define DZYFont [UIFont systemFontOfSize:14]
 // 屏幕尺寸
 #define DZYScreenW [UIScreen mainScreen].bounds.size.width
 #define DZYScreenH [UIScreen mainScreen].bounds.size.height

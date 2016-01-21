@@ -3,7 +3,7 @@
 //  颜色常识
 //
 //  Created by yz on 15/12/15.
-//  Copyright © 2015年 yz. All rights reserved.
+//  Copyright © 2015年 . All rights reserved.
 //
 
 #import "UIColor+Hex.h"
