@@ -13,6 +13,7 @@
 		4000A4B71C490C3F00F29E19 /* fx_top_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4000A4B31C490C3F00F29E19 /* fx_top_normal@3x.png */; };
 		4000A4B81C490C3F00F29E19 /* fx_top_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4000A4B41C490C3F00F29E19 /* fx_top_pressed@2x.png */; };
 		4000A4B91C490C3F00F29E19 /* fx_top_pressed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4000A4B51C490C3F00F29E19 /* fx_top_pressed@3x.png */; };
+		4001F2231C512AAA00C4E00C /* DZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4001F2221C512AAA00C4E00C /* DZYTextField.m */; };
 		401A5E531C451CF600F913C6 /* DZYTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401A5E511C451CF600F913C6 /* DZYTopicCell.m */; };
 		401A5E541C451CF600F913C6 /* DZYTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 401A5E521C451CF600F913C6 /* DZYTopicCell.xib */; };
 		401A5E571C4528F300F913C6 /* UIImageView+Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 401A5E561C4528F300F913C6 /* UIImageView+Header.m */; };
@@ -111,6 +112,8 @@
 		4000A4B31C490C3F00F29E19 /* fx_top_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fx_top_normal@3x.png"; sourceTree = "<group>"; };
 		4000A4B41C490C3F00F29E19 /* fx_top_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fx_top_pressed@2x.png"; sourceTree = "<group>"; };
 		4000A4B51C490C3F00F29E19 /* fx_top_pressed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fx_top_pressed@3x.png"; sourceTree = "<group>"; };
+		4001F2211C512AAA00C4E00C /* DZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTextField.h; sourceTree = "<group>"; };
+		4001F2221C512AAA00C4E00C /* DZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTextField.m; sourceTree = "<group>"; };
 		401A5E501C451CF600F913C6 /* DZYTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZYTopicCell.h; sourceTree = "<group>"; };
 		401A5E511C451CF600F913C6 /* DZYTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZYTopicCell.m; sourceTree = "<group>"; };
 		401A5E521C451CF600F913C6 /* DZYTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZYTopicCell.xib; sourceTree = "<group>"; };
@@ -688,6 +691,8 @@
 				401C12281C4E8B85006C4690 /* DZYPostWordToolBar.xib */,
 				4079B5D21C4FDE370061B210 /* DZYTagButton.h */,
 				4079B5D31C4FDE370061B210 /* DZYTagButton.m */,
+				4001F2211C512AAA00C4E00C /* DZYTextField.h */,
+				4001F2221C512AAA00C4E00C /* DZYTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -960,6 +965,7 @@
 				40364D121C4D62030019B3F0 /* DZYCommentViewController.m in Sources */,
 				403494D81C35964F00C35E15 /* DZYTabBar.m in Sources */,
 				40A538271C3FD99600F939F5 /* DZYFileCacheManager.m in Sources */,
+				4001F2231C512AAA00C4E00C /* DZYTextField.m in Sources */,
 				40364CFA1C4D19340019B3F0 /* DZYTopicViewController.m in Sources */,
 				403494BD1C35851500C35E15 /* AppDelegate.m in Sources */,
 				40880D9C1C3BA70200BB34BE /* DZYLoginRegisterViewController.m in Sources */,
