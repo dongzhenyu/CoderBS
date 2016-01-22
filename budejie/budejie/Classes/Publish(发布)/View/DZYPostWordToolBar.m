@@ -13,7 +13,7 @@
 
 #define DZYTagBgColor DZYColor(70, 142, 243);
 
-@interface DZYPostWordToolBar ()
+@interface DZYPostWordToolBar () <DZYAddTagViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 
@@ -50,14 +50,12 @@
 
 - (void)addClick
 {
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
     
     DZYAddTagViewController *addVc = [[DZYAddTagViewController alloc] init];
-    addVc.getTagsBlock = ^(NSArray *tags) {
-//        DZYLog(@"%@", tags);
-        // 创建标签按钮
-        [weakSelf creatTagLabels:tags];
-    };
+
+    addVc.delegate = self;
+    
     addVc.tags = [self.tagLabels valueForKeyPath:@"text"];
     
     DZYNavigationController *nav = [[DZYNavigationController alloc] initWithRootViewController:addVc];
@@ -65,6 +63,13 @@
     UIViewController *vc = self.window.rootViewController.presentedViewController;
     [vc presentViewController:nav animated:YES completion:nil];
 
+}
+
+#pragma mark - DZYAddTagViewControllerDelegate
+- (void)addTagViewController:(DZYAddTagViewController *)addVc didReceiveTags:(NSArray *)tags
+{
+//    NSLog(@"%@", tags);
+    [self creatTagLabels:tags];
 }
 
 /**
