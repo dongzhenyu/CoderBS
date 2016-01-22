@@ -15,12 +15,13 @@
 
 @interface DZYPostWordToolBar ()
 @property (weak, nonatomic) IBOutlet UIView *topView;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 /** 所有标签的label */
 @property (nonatomic, strong) NSMutableArray *tagLabels;
-
 /** 加号按钮 */
 @property (nonatomic, weak) UIButton *addButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewHeight;
 
 @end
 
@@ -72,12 +73,7 @@
 - (void)creatTagLabels:(NSArray *)tags
 {
     // 让self.tagLabels数组中的所有对象执行
-//    [self.tagLabels makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    // 移除所有label
-    for (UILabel *tagLabel in self.tagLabels) {
-        [tagLabel removeFromSuperview];
-    }
-    
+    [self.tagLabels makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.tagLabels removeAllObjects];
     
     for (int i = 0; i<tags.count; i++) {
@@ -143,7 +139,12 @@
         self.addButton.x = 0;
         self.addButton.y = 0;
     }
-
+    
+    // 计算工具条的高度
+    self.topViewHeight.constant = CGRectGetMaxY(self.addButton.frame);
+    CGFloat oldHeight = self.height;
+    self.height = self.topViewHeight.constant + self.bottomView.height + DZYSmallMargin;
+    self.y += oldHeight - self.height;
 }
 
 @end

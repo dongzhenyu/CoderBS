@@ -125,7 +125,7 @@
     // 设置点击删除键需要执行的操作
     textField.deleteBackwardOperation = ^{
         // 判断文本框是否有文字
-        if (weakSelf.textField.hasText) return ;
+        if (weakSelf.textField.hasText || weakSelf.tagButtons.count == 0) return ;
         // 点击了最后一个按钮（删掉最后一个标签按钮）
         [weakSelf tagClick:weakSelf.tagButtons.lastObject];
     };
@@ -244,18 +244,24 @@
     textW = MAX(100, textW);
     
     DZYTagButton *lastTagButton = self.tagButtons.lastObject;
-    CGFloat leftWidth = CGRectGetMaxX(lastTagButton.frame) + DZYSmallMargin;
-    CGFloat rightWidth = self.contentView.width - leftWidth;
-    if (rightWidth >= textW) { // 跟新添加的标签按钮在同一行
-        self.textField.x = leftWidth;
-        self.textField.y = lastTagButton.y;
-    } else { // 换行
+    if (lastTagButton == nil) { // 处理没有标签的时候标签左侧的位置
         self.textField.x = 0;
-        self.textField.y = CGRectGetMaxY(lastTagButton.frame) + DZYSmallMargin;
+        self.textField.y = 0;
+    } else {
+        
+        CGFloat leftWidth = CGRectGetMaxX(lastTagButton.frame) + DZYSmallMargin;
+        CGFloat rightWidth = self.contentView.width - leftWidth;
+        if (rightWidth >= textW) { // 跟新添加的标签按钮在同一行
+            self.textField.x = leftWidth;
+            self.textField.y = lastTagButton.y;
+        } else { // 换行
+            self.textField.x = 0;
+            self.textField.y = CGRectGetMaxY(lastTagButton.frame) + DZYSmallMargin;
+        }
+        // 排布提醒按钮
+        self.tigButton.y = CGRectGetMaxY(self.textField.frame) + DZYSmallMargin;
+        
     }
-    // 排布提醒按钮
-    self.tigButton.y = CGRectGetMaxY(self.textField.frame) + DZYSmallMargin;
-
 }
 
 - (void)cancel
