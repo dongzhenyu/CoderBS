@@ -72,11 +72,16 @@
 
 - (void)setupTags
 {
-    self.textField.text = @"哈哈";
-    [self tigClick];
+    for (NSString *tag in self.tags) {
+        self.textField.text = tag;
+        [self tigClick];
+    }
     
-    self.textField.text = @"嘿嘿";
-    [self tigClick];
+//    self.textField.text = @"哈哈";
+//    [self tigClick];
+//    
+//    self.textField.text = @"嘿嘿";
+//    [self tigClick];
 }
 
 - (void)setupNav
@@ -260,7 +265,20 @@
 
 - (void)done
 {
-    DZYLogFunc
+    // 传递标签数据到上一个界面
+//    NSMutableArray *tags = [NSMutableArray array];
+//    for (DZYTagButton *tagButton in self.tagButtons) {
+//        [tags addObject:tagButton.currentTitle];
+//    }
+    NSArray *tags = [self.tagButtons valueForKeyPath:@"currentTitle"];
+//    DZYLog(@"%@", tags);
+//    !self.getTagsBlock ? : self.getTagsBlock(tags);
+    if (self.getTagsBlock) {
+        self.getTagsBlock(tags);
+    }
+    
+    // 关闭当前控制器
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - 代理

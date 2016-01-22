@@ -8,8 +8,8 @@
 
 #import "DZYTabBar.h"
 #import "DZYPublishViewController.h"
-#import "DZYNavigationController.h"
-#import "DZYAddTagViewController.h"
+//#import "DZYNavigationController.h"
+//#import "DZYAddTagViewController.h"
 
 
 @interface DZYTabBar ()
@@ -60,13 +60,13 @@
 
 - (void)publishButtonClick
 {
-//    DZYPublishViewController *publishVc = [[DZYPublishViewController alloc] init];
+    DZYPublishViewController *publishVc = [[DZYPublishViewController alloc] init];
     
-//    [self.window.rootViewController presentViewController:publishVc animated:YES completion:nil];
+    [self.window.rootViewController presentViewController:publishVc animated:YES completion:nil];
     
-    DZYAddTagViewController *addVc = [[DZYAddTagViewController alloc] init];
-    DZYNavigationController *nav = [[DZYNavigationController alloc] initWithRootViewController:addVc];
-    [self.window.rootViewController presentViewController:nav animated:YES completion:nil];
+//    DZYAddTagViewController *addVc = [[DZYAddTagViewController alloc] init];
+//    DZYNavigationController *nav = [[DZYNavigationController alloc] initWithRootViewController:addVc];
+//    [self.window.rootViewController presentViewController:nav animated:YES completion:nil];
     
 }
 
