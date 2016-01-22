@@ -13,7 +13,7 @@
 
 #define DZYTagBgColor DZYColor(70, 142, 243);
 
-@interface DZYPostWordToolBar () <DZYAddTagViewControllerDelegate>
+@interface DZYPostWordToolBar ()
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 
@@ -50,11 +50,11 @@
 
 - (void)addClick
 {
-//    __weak typeof(self) weakSelf = self;
+    // 注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tongzhi:) name:@"tongzhi" object:nil];
+    
     
     DZYAddTagViewController *addVc = [[DZYAddTagViewController alloc] init];
-
-    addVc.delegate = self;
     
     addVc.tags = [self.tagLabels valueForKeyPath:@"text"];
     
@@ -65,12 +65,12 @@
 
 }
 
-#pragma mark - DZYAddTagViewControllerDelegate
-- (void)addTagViewController:(DZYAddTagViewController *)addVc didReceiveTags:(NSArray *)tags
+- (void)tongzhi:(NSNotification *)note
 {
-//    NSLog(@"%@", tags);
-    [self creatTagLabels:tags];
+//    DZYLog(@"------------%@", note.userInfo[@"tags"])
+    [self creatTagLabels:note.userInfo[@"tags"]];
 }
+
 
 /**
  *  创建标签label

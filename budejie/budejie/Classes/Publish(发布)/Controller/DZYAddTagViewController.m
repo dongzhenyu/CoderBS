@@ -268,9 +268,11 @@
 
     NSArray *tags = [self.tagButtons valueForKeyPath:@"currentTitle"];
 
-    if ([self.delegate respondsToSelector:@selector(addTagViewController:didReceiveTags:)]) {
-        [self.delegate addTagViewController:self didReceiveTags:tags];
-    }
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:tags forKey:@"tags"];
+    // 创建通知
+    NSNotification *notification = [NSNotification notificationWithName:@"tongzhi" object:nil userInfo:dict];
+    // 通过通知中心发出通知
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
     
     // 关闭当前控制器
     [self dismissViewControllerAnimated:YES completion:nil];
