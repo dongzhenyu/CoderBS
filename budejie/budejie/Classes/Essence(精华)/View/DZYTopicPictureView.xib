@@ -36,13 +36,23 @@
                         <action selector="seeBigP" destination="iN0-l3-epB" eventType="touchUpInside" id="kfJ-uA-X2W"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1Q-xK-cVN" customClass="DALabeledCircularProgressView">
+                    <rect key="frame" x="128.5" y="73" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="og0-wu-lMv"/>
+                        <constraint firstAttribute="width" constant="100" id="ufh-9Z-Y2Z"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="u1Q-xK-cVN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4R1-E7-XML"/>
                 <constraint firstAttribute="bottom" secondItem="zpI-II-LQD" secondAttribute="bottom" id="Dss-kv-eAK"/>
                 <constraint firstItem="bJI-KI-4Nx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EFG-ET-TXV"/>
                 <constraint firstItem="zpI-II-LQD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jty-N5-PzO"/>
                 <constraint firstItem="GVv-nm-7rA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OA6-7J-LnF"/>
+                <constraint firstItem="u1Q-xK-cVN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rx4-2g-N2a"/>
                 <constraint firstAttribute="trailing" secondItem="GVv-nm-7rA" secondAttribute="trailing" id="UKD-ZQ-jLN"/>
                 <constraint firstAttribute="bottom" secondItem="Fq1-9j-lCc" secondAttribute="bottom" id="Zs0-Md-80i"/>
                 <constraint firstAttribute="trailing" secondItem="Fq1-9j-lCc" secondAttribute="trailing" id="dkj-Dh-Dr5"/>
@@ -57,6 +67,7 @@
             <connections>
                 <outlet property="gifView" destination="bJI-KI-4Nx" id="SRK-cu-udN"/>
                 <outlet property="imageView" destination="Fq1-9j-lCc" id="Eik-YG-zAr"/>
+                <outlet property="progressView" destination="u1Q-xK-cVN" id="GVL-7C-Eg4"/>
                 <outlet property="seeBigButton" destination="zpI-II-LQD" id="KDv-NS-sTJ"/>
             </connections>
             <point key="canvasLocation" x="161.5" y="225.5"/>

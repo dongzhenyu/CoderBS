@@ -67,7 +67,6 @@
 
 - (void)tongzhi:(NSNotification *)note
 {
-//    DZYLog(@"------------%@", note.userInfo[@"tags"])
     [self creatTagLabels:note.userInfo[@"tags"]];
 }
 
