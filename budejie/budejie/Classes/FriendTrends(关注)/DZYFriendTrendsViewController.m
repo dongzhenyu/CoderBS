@@ -8,6 +8,7 @@
 
 #import "DZYFriendTrendsViewController.h"
 #import "DZYLoginRegisterViewController.h"
+#import "DZYRecommentFollowViewController.h"
 
 @interface DZYFriendTrendsViewController ()
 
@@ -44,6 +45,8 @@
 // 点击推荐就会调用
 - (void)clickRecomment
 {
+    DZYRecommentFollowViewController *recommentVc = [[DZYRecommentFollowViewController alloc] init];
+    [self.navigationController pushViewController:recommentVc animated:YES];
     
 }
 
